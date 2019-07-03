@@ -32,12 +32,12 @@ $conf['settings']['admin.email'] = 'admin@example.com';         // email address
 $conf['settings']['admin.email.name'] = 'Booked Administrator';	// name to be used in From: field when sending automatic emails
 $conf['settings']['default.page.size'] = '50';                  // number of records per page
 $conf['settings']['enable.email'] = 'true';                     // global configuration to enable if any emails will be sent
-$conf['settings']['default.language'] = 'en_us';                // find your language in the lang directory
-$conf['settings']['script.url'] = 'http://localhost/Web';   	// public URL to the Web directory of this instance. this is the URL that appears when you are logging in. leave http: or https: off to auto-detect
+$conf['settings']['default.language'] = 'vn_vn';                // find your language in the lang directory
+$conf['settings']['script.url'] = 'http:';   	// public URL to the Web directory of this instance. this is the URL that appears when you are logging in. leave http: or https: off to auto-detect
 $conf['settings']['image.upload.directory'] = 'Web/uploads/images'; // full or relative path to where images will be stored
 $conf['settings']['image.upload.url'] = 'uploads/images';       // full or relative path to show uploaded images from
 $conf['settings']['cache.templates'] = 'true';                  // true recommended, caching template files helps web pages render faster
-$conf['settings']['use.local.js.libs'] = 'false';                // false recommended, delivers jQuery from Google CDN, uses less bandwidth
+$conf['settings']['use.local.js.libs'] = 'true';                // false recommended, delivers jQuery from Google CDN, uses less bandwidth
 $conf['settings']['registration.captcha.enabled'] = 'true';     // recommended. unless using recaptcha this requires php_gd2 enabled in php.ini
 $conf['settings']['registration.require.email.activation'] = 'false';		// requires enable.email = true
 $conf['settings']['registration.auto.subscribe.email'] = 'false';			// requires enable.email = true
@@ -46,8 +46,8 @@ $conf['settings']['inactivity.timeout'] = '30';     			// minutes before the use
 $conf['settings']['name.format'] = '{first} {last}';     		// display format when showing user names
 $conf['settings']['css.extension.file'] = ''; 			      	// full or relative url to an additional css file to include. this can be used to override the default style
 $conf['settings']['disable.password.reset'] = 'false'; 	      	// if the password reset functionality should be disabled
-$conf['settings']['home.url'] = ''; 	      					// the url to open when the logo is clicked
-$conf['settings']['logout.url'] = ''; 	      					// the url to be directed to after logging out
+$conf['settings']['home.url'] = 'view-schedule.php'; 	      					// the url to open when the logo is clicked
+$conf['settings']['logout.url'] = 'view-schedule.php'; 	      					// the url to be directed to after logging out
 $conf['settings']['default.homepage'] = '1'; 	      			// the default homepage to use when new users register (1 = Dashboard, 2 = Schedule, 3 = My Calendar, 4 = Resource Calendar)
 
 $conf['settings']['schedule']['use.per.user.colors'] = 'false'; 		// color reservations by user
@@ -156,7 +156,7 @@ $conf['settings']['recaptcha']['private.key'] = '';
 /**
  * Email
  */
-$conf['settings']['email']['default.from.address'] = '';
+$conf['settings']['email']['default.from.address'] =  '';
 $conf['settings']['email']['default.from.name'] = '';
 /**
  * Reports
