@@ -73,7 +73,7 @@ body {
 body {
   padding-bottom: 40px;
   padding-top: 70px;
-  background-color: #fbfbfb;
+  background-color: #EBEBEB;
 }
 .adjust-nav-bar-static {
   margin-top: -70px;
@@ -86,23 +86,24 @@ a:hover {
   color: #428181;
 }
 .footer {
-  text-align: center;
+
   border-top: solid 1px #3e3d3b;
   padding-top: 2px;
   color: #fff;
   font-size: 0.8em;
-  background: #585754;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #656460), color-stop(1, #585754));
-  background: -ms-linear-gradient(bottom, #656460, #585754);
-  background: -moz-linear-gradient(center bottom, #656460 0%, #585754 100%);
-  background: -o-linear-gradient(#585754, #656460);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#585754', endColorstr='#656460', GradientType=0);
-  height: 40px;
-  min-height: 40px;
+  background: #EEEEEE;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #EEEEEE), color-stop(1, #EEEEEE));
+  background: -ms-linear-gradient(bottom, #EEEEEE, #EEEEEE);
+  background: -moz-linear-gradient(center bottom, #EEEEEE 0%, #EEEEEE 100%);
+  background: -o-linear-gradient(#EEEEEE, #EEEEEE);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEEEEE', endColorstr='#656460', GradientType=0);
+  height: 250px;
+  min-height: 250px;
   margin-bottom: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+
 }
 .footer a {
   color: #fff;
@@ -1317,14 +1318,14 @@ td.resourcename.hilite {
 div.legend {
   line-height: 22px;
   width: 110px;
-  border: solid #555 1px;
-  text-align: center;
+/*  border: solid #555 1px;
+*/  text-align: center;
   display: inline-block;
   *display: inline;
   margin: 0 2px;
-  -webkit-border-radius: 2px;
+/*  -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
-  border-radius: 2px;
+  border-radius: 2px;*/
 }
 #reservations-left {
   padding: 0;

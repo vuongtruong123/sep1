@@ -32,7 +32,7 @@ $conf['settings']['admin.email'] = 'admin@example.com';         // email address
 $conf['settings']['admin.email.name'] = 'Booked Administrator';	// name to be used in From: field when sending automatic emails
 $conf['settings']['default.page.size'] = '50';                  // number of records per page
 $conf['settings']['enable.email'] = 'true';                     // global configuration to enable if any emails will be sent
-$conf['settings']['default.language'] = 'vn_vn';                // find your language in the lang directory
+$conf['settings']['default.language'] = 'en_us';                // find your language in the lang directory
 $conf['settings']['script.url'] = 'http:';   	// public URL to the Web directory of this instance. this is the URL that appears when you are logging in. leave http: or https: off to auto-detect
 $conf['settings']['image.upload.directory'] = 'Web/uploads/images'; // full or relative path to where images will be stored
 $conf['settings']['image.upload.url'] = 'uploads/images';       // full or relative path to show uploaded images from
@@ -73,10 +73,10 @@ $conf['settings']['privacy']['allow.guest.reservations'] = 'false';			// if rese
  * Reservation specific configuration
  */
 $conf['settings']['reservation']['start.time.constraint'] = 'future';		// when reservations can be created or edited. options are future, current, none
-$conf['settings']['reservation']['updates.require.approval'] = 'false';		// if updates to previously approved reservations require approval again
+$conf['settings']['reservation']['updates.require.approval'] = 'true';		// if updates to previously approved reservations require approval again
 $conf['settings']['reservation']['prevent.participation'] = 'false';		// if participation and invitation options should be removed
 $conf['settings']['reservation']['prevent.recurrence'] = 'false';			// if recurring reservations are disabled for non-administrators
-$conf['settings']['reservation']['enable.reminders'] = 'false';				// if reminders are enabled. this requires email to be enabled and the reminder job to be configured
+$conf['settings']['reservation']['enable.reminders'] = 'true';				// if reminders are enabled. this requires email to be enabled and the reminder job to be configured
 $conf['settings']['reservation']['allow.guest.participation'] = 'false';
 $conf['settings']['reservation']['allow.wait.list'] = 'false';
 $conf['settings']['reservation']['checkin.minutes.prior'] = '5';

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-06-23 17:11:22
-  from "C:\xampp\htdocs\booked\tpl\globalfooter.tpl" */
+/* Smarty version 3.1.30, created on 2019-07-03 08:54:27
+  from "C:\xampp\htdocs\sep1\tpl\globalfooter.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d0f969a654ed9_00406032',
+  'unifunc' => 'content_5d1c512335eff3_73897356',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'b0be84de292a60b5078447c6f0c3f3d2e5e1f824' => 
+    '2c560c920b5d5d8342c544bc6d4aca8cd0024b07' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\booked\\tpl\\globalfooter.tpl',
-      1 => 1555329034,
+      0 => 'C:\\xampp\\htdocs\\sep1\\tpl\\globalfooter.tpl',
+      1 => 1562118978,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d0f969a654ed9_00406032 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d1c512335eff3_73897356 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 
 	</div><!-- close main-->
-
-
 	<footer class="footer navbar" >
 		<div style="text-align: center;" class="col-md-6">
 
