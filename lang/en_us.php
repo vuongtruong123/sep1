@@ -69,18 +69,18 @@ class en_us extends Language
 	{
 		$strings = array();
 
-		$strings['FirstName'] = 'First Name';
-		$strings['LastName'] = 'Last Name';
-		$strings['Timezone'] = 'Timezone';
-		$strings['Edit'] = 'Edit';
-		$strings['Change'] = 'Change';
-		$strings['Rename'] = 'Rename';
-		$strings['Remove'] = 'Remove';
-		$strings['Delete'] = 'Delete';
-		$strings['Update'] = 'Update';
-		$strings['Cancel'] = 'Cancel';
-		$strings['Add'] = 'Add';
-		$strings['Name'] = 'Name';
+		$strings['FirstName'] = 'Họ';
+		$strings['LastName'] = 'Tên';
+		$strings['Timezone'] = 'Múi Giờ';
+		$strings['Edit'] = 'Chỉnh Sửa';
+		$strings['Change'] = 'Thay Đổi';
+		$strings['Rename'] = 'Đổi tên';
+		$strings['Remove'] = 'Xóa bỏ';
+		$strings['Delete'] = 'Xóa';
+		$strings['Update'] = 'Cập nhật';
+		$strings['Cancel'] = 'Hủy';
+		$strings['Add'] = 'Thêm';
+		$strings['Name'] = 'Tên';
 		$strings['Yes'] = 'Yes';
 		$strings['No'] = 'No';
 		$strings['FirstNameRequired'] = 'First name is required.';
@@ -315,7 +315,7 @@ class en_us extends Language
 		$strings['Reason'] = 'Reason';
 		$strings['BlackoutShowMe'] = 'Show me conflicting reservations';
 		$strings['BlackoutDeleteConflicts'] = 'Delete conflicting reservations';
-		$strings['Filter'] = 'Filter';
+		$strings['Filter'] = 'Tìm';
 		$strings['Between'] = 'Between';
 		$strings['CreatedBy'] = 'Created By';
 		$strings['BlackoutCreated'] = 'Blackout Created';
@@ -358,17 +358,17 @@ class en_us extends Language
 		$strings['AddUser'] = 'Add User';
 		$strings['UserPermissionInfo'] = 'Actual access to resource may be different depending on user role, group permissions, or external permission settings';
 		$strings['DeleteUserWarning'] = 'Deleting this user will remove all of their current, future, and historical reservations.';
-		$strings['AddAnnouncement'] = 'Add Announcement';
-		$strings['Announcement'] = 'Announcement';
-		$strings['Priority'] = 'Priority';
-		$strings['Reservable'] = 'Open';
-		$strings['Unreservable'] = 'Blocked';
-		$strings['Reserved'] = 'Reserved';
-		$strings['MyReservation'] = 'My Reservation';
-		$strings['Pending'] = 'Pending';
-		$strings['Past'] = 'Past';
-		$strings['Restricted'] = 'Restricted';
-		$strings['ViewAll'] = 'View All';
+		$strings['AddAnnouncement'] = 'Thêm thông báo';
+		$strings['Announcement'] = 'Thông Báo';
+		$strings['Priority'] = 'Ưu tiên';
+		$strings['Reservable'] = 'Phòng Trống';
+		$strings['Unreservable'] = 'Khóa Phòng';
+		$strings['Reserved'] = 'Đã đặt phòng';
+		$strings['MyReservation'] = 'Lịch họp của tôi';
+		$strings['Pending'] = 'Đang chờ';
+		$strings['Past'] = 'Thời gian đã qua';
+		$strings['Restricted'] = 'Cấm';
+		$strings['ViewAll'] = 'Xem tất cả';
 		$strings['MoveResourcesAndReservations'] = 'Move resources and reservations to';
 		$strings['TurnOffSubscription'] = 'Hide from public';
 		$strings['TurnOnSubscription'] = 'Show to public (RSS, iCalendar)';
@@ -433,7 +433,7 @@ class en_us extends Language
 		$strings['AggregateBy'] = 'Aggregate By';
 		$strings['Range'] = 'Range';
 		$strings['Choose'] = 'Choose';
-		$strings['All'] = 'All';
+		$strings['All'] = 'Cơ sở';
 		$strings['ViewAsChart'] = 'View As Chart';
 		$strings['ReservedResources'] = 'Reserved Resources';
 		$strings['ReservedAccessories'] = 'Reserved Accessories';
@@ -476,7 +476,7 @@ class en_us extends Language
 		$strings['Next'] = 'Next';
 		$strings['Success'] = 'Success';
 		$strings['Participant'] = 'Participant';
-		$strings['ResourceFilter'] = 'Resource Filter';
+		$strings['ResourceFilter'] = 'Tìm kiếm';
 		$strings['ResourceGroups'] = 'Resource Groups';
 		$strings['AddNewGroup'] = 'Add a new group';
 		$strings['Quit'] = 'Quit';
@@ -489,13 +489,13 @@ class en_us extends Language
 		$strings['ResourceGroupHelp2'] = 'Right click a resource group name for additional actions.';
 		$strings['ResourceGroupHelp3'] = 'Drag and drop resources to add them to groups.';
 		$strings['ResourceGroupWarning'] = 'If using resource groups, each resource must be assigned to at least one group. Unassigned resources will not be able to be reserved.';
-		$strings['ResourceType'] = 'Resource Type';
+		$strings['ResourceType'] = 'Loại';
 		$strings['AppliesTo'] = 'Applies To';
 		$strings['UniquePerInstance'] = 'Unique Per Instance';
 		$strings['AddResourceType'] = 'Add Resource Type';
 		$strings['NoResourceTypeLabel'] = '(no resource type set)';
-		$strings['ClearFilter'] = 'Clear Filter';
-		$strings['MinimumCapacity'] = 'Minimum Capacity';
+		$strings['ClearFilter'] = 'Đặt lại';
+		$strings['MinimumCapacity'] = 'Số chổ ngồi ';
 		$strings['Color'] = 'Color';
 		$strings['Available'] = 'Available';
 		$strings['Unavailable'] = 'Unavailable';
@@ -877,7 +877,7 @@ class en_us extends Language
 		// Page Titles
 		$strings['CreateReservation'] = 'Create Reservation';
 		$strings['EditReservation'] = 'Update Reservation';
-		$strings['LogIn'] = 'Log In';
+		$strings['LogIn'] = 'Đăng nhập';
 		$strings['ManageReservations'] = 'Reservations';
 		$strings['AwaitingActivation'] = 'Awaiting Activation';
 		$strings['PendingApproval'] = 'Pending Approval';
@@ -891,7 +891,7 @@ class en_us extends Language
 		$strings['MyDashboard'] = 'My Dashboard';
 		$strings['ServerSettings'] = 'Server Settings';
 		$strings['Dashboard'] = 'Dashboard';
-		$strings['Help'] = 'Help';
+		$strings['Help'] = 'Hướng dẫn';
 		$strings['Administration'] = 'Administration';
 		$strings['About'] = 'About';
 		$strings['Bookings'] = 'Bookings';
@@ -1004,6 +1004,66 @@ class en_us extends Language
 	/**
 	 * @return array
 	 */
+// 	protected function _LoadDays()
+// 	{
+// 		$days = array();
+
+// 		/***
+// 		 * DAY NAMES
+// 		 * All of these arrays MUST start with Sunday as the first element
+// 		 * and go through the seven day week, ending on Saturday
+// 		 ***/
+// 		// The full day name
+// 		$days['full'] = array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+// 		// The three letter abbreviation
+// 		$days['abbr'] = array('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat');
+// 		// The two letter abbreviation
+// 		$days['two'] = array('Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa');
+// 		// The one letter abbreviation
+// 		$days['letter'] = array('S', 'M', 'T', 'W', 'T', 'F', 'S');
+
+// 		$this->Days = $days;
+
+// 		return $this->Days;
+// 	}
+
+// 	/**
+// 	 * @return array
+// 	 */
+// 	protected function _LoadMonths()
+// 	{
+// 		$months = array();
+
+// 		**
+// 		 * MONTH NAMES
+// 		 * All of these arrays MUST start with January as the first element
+// 		 * and go through the twelve months of the year, ending on December
+// 		 **
+// 		// The full month name
+// 		$months['full'] = array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
+// 		// The three letter month name
+// 		$months['abbr'] = array('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec');
+
+// 		$this->Months = $months;
+
+// 		return $this->Months;
+// 	}
+
+// 	/**
+// 	 * @return array
+// 	 */
+// 	protected function _LoadLetters()
+// 	{
+// 		$this->Letters = array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
+
+// 		return $this->Letters;
+// 	}
+
+// 	protected function _GetHtmlLangCode()
+// 	{
+// 		return 'en';
+// 	}
+// }
 	protected function _LoadDays()
 	{
 		$days = array();
@@ -1014,9 +1074,9 @@ class en_us extends Language
 		 * and go through the seven day week, ending on Saturday
 		 ***/
 		// The full day name
-		$days['full'] = array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+		$days['full'] = array('Chủ Nhật', 'Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7');
 		// The three letter abbreviation
-		$days['abbr'] = array('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat');
+		$days['abbr'] = array('CN', 'Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7');
 		// The two letter abbreviation
 		$days['two'] = array('Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa');
 		// The one letter abbreviation
