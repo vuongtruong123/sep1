@@ -526,13 +526,7 @@ admin/server_settings.php"><?php echo $_smarty_tpl->smarty->registered_plugins[S
 admin/data_cleanup.php"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>"DataCleanup"),$_smarty_tpl);?>
 </a>
                                 </li>
-                                <?php if ($_smarty_tpl->tpl_vars['ShowNewVersion']->value) {?>
-                                    <li class="divider new-version"></li>
-                                    <li id="navNewVersion" class="new-version">
-                                        <a href="https://www.bookedscheduler.com/whatsnew"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'WhatsNew'),$_smarty_tpl);?>
-</a>
-                                    </li>
-                                <?php }?>
+                                
                             </ul>
                         </li>
                     <?php }?>
