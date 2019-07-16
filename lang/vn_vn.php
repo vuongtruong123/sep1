@@ -671,9 +671,9 @@ class vn_vn extends en_gb
 		$strings['MyDashboard'] = 'Bảng điều khiển của tôi';
 		$strings['ServerSettings'] = 'Server Settings';
 		$strings['Dashboard'] = 'Bảng điều khiển';
-		$strings['Help'] = 'Trợ Giúp';
+		$strings['Help'] = 'Hướng dẫn';
 		$strings['Administration'] = 'Administration';
-		$strings['About'] = 'Thông tin hệ thống';
+		$strings['About'] = 'Liên hệ';
 		$strings['Bookings'] = 'Bookings';
 		$strings['Schedule'] = 'Schedule';
 		$strings['Account'] = 'Tài khoản';

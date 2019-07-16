@@ -282,7 +282,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                                 </ul>
                             </li>
                         {/if}
-                        {if $CanViewReports}
+                        <!-- {if $CanViewReports}
                             <li class="dropdown" id="navReportsDropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">{translate key="Reports"} <b
                                             class="caret"></b></a>
@@ -298,7 +298,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                                     </li>
                                 </ul>
                             </li>
-                        {/if}
+                        {/if} -->
                     {/if}
 
                 </ul>
@@ -315,7 +315,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                             </ul>
                         </li>
                     {/if}
-                    {if $CanViewAdmin}
+                    <!-- {if $CanViewAdmin}
                         <li class="dropdown" id="navHelpDropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <span class="no-show">Configuration</span>
@@ -344,25 +344,23 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                                 <li id="navDataCleanup"><a
                                             href="{$Path}admin/data_cleanup.php">{translate key="DataCleanup"}</a>
                                 </li>
-<!--                                 {if $ShowNewVersion}
+                                {if $ShowNewVersion}
                                     <li class="divider new-version"></li>
                                     <li id="navNewVersion" class="new-version">
                                         <a href="https://www.bookedscheduler.com/whatsnew">{translate key=WhatsNew}</a>
                                     </li>
-                                {/if} -->
+                                {/if}
                             </ul>
                         </li>
-                    {/if}
+                    {/if} -->
                     <li class="dropdown" id="navHelpDropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">{translate key="Help"} <b
-                                    class="caret"></b></a>
-                        <ul class="dropdown-menu">
+                            <li id="navschedule"><a href="{$Path}view-schedule.php">Trang chủ</a></li>
+                            
+                            <li id="navAbout"><a href="{$Path}help.php?ht=about">{translate key=About}</a></li>
                             <li id="navHelp"><a href="{$Path}help.php">{translate key=Help}</a></li>
                             {if $CanViewAdmin}
-                                <li id="navHelpAdmin"><a
-                                        href="{$Path}help.php?ht=admin">{translate key=Administration}</a></li>{/if}
-                            <li id="navAbout"><a href="{$Path}help.php?ht=about">{translate key=About}</a></li>
-                        </ul>
+                                <!-- <li id="navHelpAdmin"><a
+                                        href="{$Path}help.php?ht=admin">{translate key=Administration}</a></li> -->{/if}
                     </li>
                     {if $LoggedIn}
                         <li id="navSignOut"><a href="{$Path}logout.php">{translate key="SignOut"}</a></li>
