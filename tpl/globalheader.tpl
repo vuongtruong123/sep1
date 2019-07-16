@@ -147,8 +147,17 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
             </div>
             <div class="collapse navbar-collapse" id="booked-navigation">
                 <ul class="nav navbar-nav">
+                    <li class="dropdown" id="navHelpDropdown">
+                            <li id="navschedule"><a href="{$Path}view-schedule.php">Trang chủ</a></li>
+                            
+                            <li id="navAbout"><a href="{$Path}help.php?ht=about">{translate key=About}</a></li>
+                            <li id="navHelp"><a href="{$Path}help.php">{translate key=Help}</a></li>
+                            {if $CanViewAdmin}
+                                <!-- <li id="navHelpAdmin"><a
+                                        href="{$Path}help.php?ht=admin">{translate key=Administration}</a></li> -->{/if}
+                    </li>
                     {if $LoggedIn}
-                        <li id="navDashboard"><a href="{$Path}{Pages::DASHBOARD}">{translate key="Dashboard"}</a></li>
+                        <!-- <li id="navDashboard"><a href="{$Path}{Pages::DASHBOARD}">{translate key="Dashboard"}</a></li> -->
                         <li class="dropdown" id="navMyAccountDropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">{translate key="MyAccount"} <b
                                         class="caret"></b></a>
@@ -353,15 +362,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                             </ul>
                         </li>
                     {/if} -->
-                    <li class="dropdown" id="navHelpDropdown">
-                            <li id="navschedule"><a href="{$Path}view-schedule.php">Trang chủ</a></li>
-                            
-                            <li id="navAbout"><a href="{$Path}help.php?ht=about">{translate key=About}</a></li>
-                            <li id="navHelp"><a href="{$Path}help.php">{translate key=Help}</a></li>
-                            {if $CanViewAdmin}
-                                <!-- <li id="navHelpAdmin"><a
-                                        href="{$Path}help.php?ht=admin">{translate key=Administration}</a></li> -->{/if}
-                    </li>
+                    
                     {if $LoggedIn}
                         <li id="navSignOut"><a href="{$Path}logout.php">{translate key="SignOut"}</a></li>
                     {else}
