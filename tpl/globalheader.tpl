@@ -158,7 +158,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                     </li>
                     {if $LoggedIn}
                         <!-- <li id="navDashboard"><a href="{$Path}{Pages::DASHBOARD}">{translate key="Dashboard"}</a></li> -->
-                        <li class="dropdown" id="navMyAccountDropdown">
+                        <!-- <li class="dropdown" id="navMyAccountDropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">{translate key="MyAccount"} <b
                                         class="caret"></b></a>
                             <ul class="dropdown-menu">
@@ -179,7 +179,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                                     </li>
                                 {/if}
                             </ul>
-                        </li>
+                        </li> -->
                         <li class="dropdown" id="navScheduleDropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">{translate key="Schedule"} <b
                                         class="caret"></b></a>

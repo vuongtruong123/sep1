@@ -310,7 +310,7 @@ class en_us extends Language
 		$strings['DeleteWarning'] = 'Hành động này là vĩnh viễn và không thể phục hồi!';
 		$strings['DeleteAccessoryWarning'] = 'Xóa phụ kiện này sẽ xóa nó khỏi tất cả các đặt phòng.';
 		$strings['AddAccessory'] = 'Thêm phụ kiện';
-		$strings['AddBlackout'] = 'Thêm mất điện';
+		$strings['AddBlackout'] = 'Add Blackout';
 		$strings['AllResourcesOn'] = 'Tất cả tài nguyên trên';
 		$strings['Reason'] = 'Lý do';
 		$strings['BlackoutShowMe'] = 'Hiện lịch họp bị trùng giờ';
@@ -587,7 +587,7 @@ class en_us extends Language
 		$strings['UsersWithAccessToResources'] = 'Users With Access To Resources';
 		$strings['AnnouncementSubject'] = 'A new announcement was posted by %s';
 		$strings['AnnouncementEmailNotice'] = 'users will be sent this announcement as an email';
-		$strings['Day'] = 'Day';
+		$strings['Day'] = 'Ngày';
 		$strings['NotifyWhenAvailable'] = 'Notify Me When Available';
 		$strings['AddingToWaitlist'] = 'Adding you to the wait list';
 		$strings['WaitlistRequestAdded'] = 'You will be notified if this time becomes available';
@@ -882,12 +882,12 @@ class en_us extends Language
 		$strings['AwaitingActivation'] = 'Đang chờ kích hoạt';
 		$strings['PendingApproval'] = 'Chờ phê duyệt';
 		$strings['ManageSchedules'] = 'Quản lý lịch';
-		$strings['ManageResources'] = 'Quản lý tài nguyên';
-		$strings['ManageAccessories'] = 'Quản lý phụ kiện';
+		$strings['ManageResources'] = 'Quản lý danh sách phòng';
+		$strings['ManageAccessories'] = 'Quản lý trang thiết bị';
 		$strings['ManageUsers'] = 'Quản lý người dùng';
 		$strings['ManageGroups'] = 'Quản lý nhóm';
-		$strings['ManageQuotas'] = 'Quản lý hạn ngạch';
-		$strings['ManageBlackouts'] = 'Thời gian mất điện';
+		$strings['ManageQuotas'] = 'Hạn mức';
+		$strings['ManageBlackouts'] = 'Blackouts Time';
 		$strings['MyDashboard'] = 'Bảng điều khiển của tôi';
 		$strings['ServerSettings'] = 'Cài đặt máy chủ';
 		$strings['Dashboard'] = 'Bảng điều khiển';
