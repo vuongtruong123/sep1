@@ -324,7 +324,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                             </ul>
                         </li>
                     {/if}
-                    <!-- {if $CanViewAdmin}
+                    {if $CanViewAdmin}
                         <li class="dropdown" id="navHelpDropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <span class="no-show">Configuration</span>
@@ -361,7 +361,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                                 {/if}
                             </ul>
                         </li>
-                    {/if} -->
+                    {/if}
                     
                     {if $LoggedIn}
                         <li id="navSignOut"><a href="{$Path}logout.php">{translate key="SignOut"}</a></li>
