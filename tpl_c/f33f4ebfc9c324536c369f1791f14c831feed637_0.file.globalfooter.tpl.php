@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-07-17 04:39:55
+/* Smarty version 3.1.30, created on 2019-07-03 06:24:12
   from "C:\xampp\htdocs\sep1\tpl\globalfooter.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d2e8a7b614ad5_25627529',
+  'unifunc' => 'content_5d1c2dec156da1_48838684',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'e49b3819aa91fac6fd13267634e9d6e6d219e237' => 
+    'f33f4ebfc9c324536c369f1791f14c831feed637' => 
     array (
       0 => 'C:\\xampp\\htdocs\\sep1\\tpl\\globalfooter.tpl',
-      1 => 1563302068,
+      1 => 1562118978,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d2e8a7b614ad5_25627529 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d1c2dec156da1_48838684 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 
@@ -42,7 +42,6 @@ function content_5d2e8a7b614ad5_25627529 (Smarty_Internal_Template $_smarty_tpl)
 </div>
 
 	</footer>
-
 	<?php echo '<script'; ?>
  type="text/javascript">
 		init();

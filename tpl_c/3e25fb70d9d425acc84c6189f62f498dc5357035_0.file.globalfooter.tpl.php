@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-07-17 04:39:55
-  from "C:\xampp\htdocs\sep1\tpl\globalfooter.tpl" */
+/* Smarty version 3.1.30, created on 2019-06-26 17:32:11
+  from "C:\xampp\htdocs\booked\tpl\globalfooter.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d2e8a7b614ad5_25627529',
+  'unifunc' => 'content_5d138ffb2e4eb6_84517605',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'e49b3819aa91fac6fd13267634e9d6e6d219e237' => 
+    '3e25fb70d9d425acc84c6189f62f498dc5357035' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\sep1\\tpl\\globalfooter.tpl',
-      1 => 1563302068,
+      0 => 'C:\\xampp\\htdocs\\booked\\tpl\\globalfooter.tpl',
+      1 => 1555329034,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d2e8a7b614ad5_25627529 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d138ffb2e4eb6_84517605 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 
@@ -42,7 +42,6 @@ function content_5d2e8a7b614ad5_25627529 (Smarty_Internal_Template $_smarty_tpl)
 </div>
 
 	</footer>
-
 	<?php echo '<script'; ?>
  type="text/javascript">
 		init();
