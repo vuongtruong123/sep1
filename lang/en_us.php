@@ -298,7 +298,7 @@ class en_us extends Language
 		$strings['ChangeUser'] = 'Change User';
 		$strings['MoreResources'] = 'More Resources';
 		$strings['ReservationLength'] = 'Reservation Length';
-		$strings['ParticipantList'] = 'Participant List';
+		$strings['note'] = 'Note';
 		$strings['AddParticipants'] = 'Add Participants';
 		$strings['InviteOthers'] = 'Invite Others';
 		$strings['AddResources'] = 'Add Resources';

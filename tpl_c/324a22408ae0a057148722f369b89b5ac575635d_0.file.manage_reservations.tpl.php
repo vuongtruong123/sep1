@@ -102,9 +102,8 @@ if (!is_callable('smarty_function_cycle')) require_once 'C:\\xampp\\htdocs\\book
                     <input id="endDate" type="text" class="form-control dateinput inline"
 						   value="<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['formatdate'][0][0]->FormatDate(array('date'=>$_smarty_tpl->tpl_vars['EndDate']->value),$_smarty_tpl);?>
 "/>
-					<input id="formattedEndDate" type="hidden" value="<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['formatdate'][0][0]->FormatDate(array('date'=>$_smarty_tpl->tpl_vars['EndDate']->value,'key'=>'system'),$_smarty_tpl);?>
-"/>
-                </div>
+				
+             
 				<div class="form-group filter-user <?php echo $_smarty_tpl->tpl_vars['groupClass']->value;?>
 ">
                     <label for="userFilter" class="no-show"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'User'),$_smarty_tpl);?>

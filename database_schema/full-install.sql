@@ -286,6 +286,7 @@ CREATE TABLE  `reservation_series` (
   `last_modified` datetime,
   `title` varchar(85) NOT NULL,
   `description` text,
+  `note` text,
   `allow_participation` tinyint(1) unsigned NOT NULL,
   `allow_anon_participation` tinyint(1) unsigned NOT NULL,
   `type_id` tinyint(2) unsigned NOT NULL,

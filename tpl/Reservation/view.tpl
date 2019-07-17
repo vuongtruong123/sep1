@@ -31,15 +31,40 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                 {/if}
 
                 <div id="reservationDetails" class="{$detailsCol}">
-                    <div class="col-xs-12">
+                    <div style="" class="col-xs-12">
                         <label>{translate key='User'}</label>
                         {if $ShowUserDetails && $ShowReservationDetails}
                             <a href="#" class="bindableUser" data-userid="{$UserId}">{$ReservationUserName}</a>
                             <input id="userId" type="hidden" value="{$UserId}"/>
-                        {else}
+                        {else
                             {translate key=Private}
                         {/if}
                     </div>
+                    <div>
+
+
+                        {if $ShowReservationDetails}
+                            <div class="col-xs-12">
+                                <label>{translate key='ReservationTitle'}</label>
+                                {if $ReservationTitle neq ''}
+                                    {$ReservationTitle}
+                                {else}
+                                    <span class="no-data">{translate key='None'}</span>
+                                {/if}
+                            </div>
+                            <div class="col-xs-12">
+                                <label>{translate key='ReservationDescription'}</label>
+                                {if $Description neq ''}
+                                    <br/>
+                                    {$Description|nl2br}
+                                {else}
+                                    <span class="no-data">{translate key='None'}</span>
+                                {/if}
+                            </div> 
+                        </div>
+ 
+
+  
 
                     <div class="col-xs-12">
                         <div class="col-md-6 no-padding-left">
@@ -120,31 +145,9 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                         </div>
                     </div>
 
-                    {if $ShowReservationDetails}
-                        <div class="col-xs-12">
-                            <label>{translate key='ReservationTitle'}</label>
-                            {if $ReservationTitle neq ''}
-                                {$ReservationTitle}
-                            {else}
-                                <span class="no-data">{translate key='None'}</span>
-                            {/if}
-                        </div>
-                        <div class="col-xs-12">
-                            <label>{translate key='ReservationDescription'}</label>
-                            {if $Description neq ''}
-                                <br/>
-                                {$Description|nl2br}
-                            {else}
-                                <span class="no-data">{translate key='None'}</span>
-                            {/if}
-                        </div>
-                        <div class="col-xs-12">
-                            <div class="form-group">
-                                <label>{translate key=ReferenceNumber}</label>
-                                {$ReferenceNumber}
-                            </div>
-                        </div>
-                    {/if}
+
+
+
                 </div>
 
                 {if $ShowParticipation && $AllowParticipation && $ShowReservationDetails}

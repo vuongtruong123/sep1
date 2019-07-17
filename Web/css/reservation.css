@@ -63,7 +63,7 @@
 }
 #reservationbox {
   width: 100%;
-  margin: 3em auto 1em;
+  margin: 10em auto 1em;
 }
 #reservationbox ul {
   list-style: none;
@@ -71,6 +71,7 @@
 #reservationbox input[type="file"] {
   font-size: 10pt;
 }
+
 #reservationbox .input {
   font-size: 16px;
   width: 98%;
@@ -183,6 +184,9 @@
   display: inline-block;
   padding-right: 30px;
 }
+.BeginPeriod{
+  margin-left: 30px;
+}
 .reminderLabel {
   font-size: 10pt;
 }
@@ -206,11 +210,16 @@ ul.jqtree-tree .group-resource .jqtree-title {
 .reservationDate {
   width: 50px;
   display: inline-block;
+
 }
-.reservationDates,
+.BeginPeriod{
+  margin-left:30px;
+}
+
 .reservationTitle,
 .reservationResources {
   padding-top: 12px;
+
 }
 .reservationLength .form-group {
   margin: 5px 0;

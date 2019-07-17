@@ -1,27 +1,39 @@
-{*
-Copyright 2012-2019 Nick Korbel
+<?php
+/* Smarty version 3.1.30, created on 2019-07-05 05:18:37
+  from "C:\xampp\htdocs\sep1\tpl\support-and-credits.tpl" */
 
-This file is part of Booked Scheduler.
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_5d1ec18d6fd739_51756032',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '2fe3e6a45c56658aa169eeaa7a421dff05548ba3' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\sep1\\tpl\\support-and-credits.tpl',
+      1 => 1562295900,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+    'file:globalheader.tpl' => 1,
+    'file:javascript-includes.tpl' => 1,
+    'file:globalfooter.tpl' => 1,
+  ),
+),false)) {
+function content_5d1ec18d6fd739_51756032 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 
-Booked Scheduler is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+<?php $_smarty_tpl->_subTemplateRender("file:globalheader.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
 
-Booked Scheduler is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
-*}
-{include file='globalheader.tpl'}
 <div id="page-support-and-credits" class="admin-page">
 
     <div class="default-box col-xs-12 col-sm-8 col-sm-offset-2">
 
-        <h1>About Booked S</h1>
+        <h1>About Booked Scheduler</h1>
 
         <h2>Support</h2>
 
@@ -100,6 +112,10 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 
     </div>
 </div>
-{include file="javascript-includes.tpl"}
+<?php $_smarty_tpl->_subTemplateRender("file:javascript-includes.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
 
-{include file='globalfooter.tpl'}
+
+<?php $_smarty_tpl->_subTemplateRender("file:globalfooter.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+}
+}

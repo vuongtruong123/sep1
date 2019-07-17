@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-07-03 09:17:33
+/* Smarty version 3.1.30, created on 2019-07-15 05:25:37
   from "C:\xampp\htdocs\sep1\tpl\Reservation\participation.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d1c568d8dd788_65478918',
+  'unifunc' => 'content_5d2bf231a467d6_74287749',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '02624a849a407adc4b731262dda1a8af83bacb83' => 
+    'b16021d1de5e3fcbd10a7276ff73cee27f4b1212' => 
     array (
       0 => 'C:\\xampp\\htdocs\\sep1\\tpl\\Reservation\\participation.tpl',
-      1 => 1562118978,
+      1 => 1563160949,
       2 => 'file',
     ),
   ),
@@ -20,65 +20,42 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d1c568d8dd788_65478918 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d2bf231a467d6_74287749 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
-
 
 <div id="reservationParticipation">
 	<div class="row">
-		<label for="participantAutocomplete"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>"note"),$_smarty_tpl);?>
+		<label for="participantAutocomplete"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>"ParticipantList"),$_smarty_tpl);?>
 </label>
-      <div>
-		 <textarea id="participation" name="<?php echo FormKeys::NOTE;?>
-"class="form-control"
-                                      <?php if ($_smarty_tpl->tpl_vars['Note']->value) {?>required="note"<?php }?>><?php echo $_smarty_tpl->tpl_vars['NOTE']->value;?>
-</textarea>
-                            <?php if ($_smarty_tpl->tpl_vars['NoteRequired']->value) {?>
-                                <i class="glyphicon glyphicon-asterisk form-control-feedback"
-                                   data-bv-icon-for="NOTE"></i>
-                            <?php }?>
-
-		</div>
-	</div>
-
-
-
-
-
-
-
-
-	<div class="row">
-		<label for="inviteeAutocomplete"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>"InvitationList"),$_smarty_tpl);?>
-</label>
-        <span class="badge" id="inviteeBadge">0</span>
-		<br/>
+        <span class="badge" id="participantBadge">0</span>
+        <br/>
 		<div class="participationText">
 			<span class="hidden-xs"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'Add'),$_smarty_tpl);?>
 </span>
-			<input type="text" id="inviteeAutocomplete" class="form-control inline-block user-search" placeholder="<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'NameOrEmail'),$_smarty_tpl);?>
+			<input type="text" id="participantAutocomplete" class="form-control inline-block user-search" placeholder="<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'NameOrEmail'),$_smarty_tpl);?>
 "/>
 			<span class="hidden-xs">|</span>
 		</div>
 		<div class="participationButtons">
-			<button id="promptForInvitees" type="button" class="btn btn-link inline">
+			<button id="promptForParticipants" type="button" class="btn btn-link inline">
 				<i class="fa fa-user"></i>
 				<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'Users'),$_smarty_tpl);?>
 
 			</button>
-			<button id="promptForGroupInvitees" type="button" class="btn btn-link inline">
+			<button id="promptForGroupParticipants" type="button" class="btn btn-link inline">
 				<i class="fa fa-users"></i>
 				<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'Groups'),$_smarty_tpl);?>
 
 			</button>
-			<?php if ($_smarty_tpl->tpl_vars['AllowGuestParticipation']->value) {?>
-				<button id="promptForGuests" type="button" class="btn btn-link inline">
-					<i class="fa fa-user-plus"></i>
-					<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'Guest'),$_smarty_tpl);?>
-
-				</button>
-			<?php }?>
 		</div>
+
+		<div id="participantList">
+		</div>
+	</div>
+	<div class="row">
+		<label for="inviteeAutocomplete"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>"InvitationList"),$_smarty_tpl);?>
+</label>
+         
 
 		<div id="inviteeList">
 		</div>

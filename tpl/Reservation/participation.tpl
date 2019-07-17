@@ -42,29 +42,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 	</div>
 	<div class="row">
 		<label for="inviteeAutocomplete">{translate key="InvitationList"}</label>
-        <span class="badge" id="inviteeBadge">0</span>
-		<br/>
-		<div class="participationText">
-			<span class="hidden-xs">{translate key=Add}</span>
-			<input type="text" id="inviteeAutocomplete" class="form-control inline-block user-search" placeholder="{translate key=NameOrEmail}"/>
-			<span class="hidden-xs">|</span>
-		</div>
-		<div class="participationButtons">
-			<button id="promptForInvitees" type="button" class="btn btn-link inline">
-				<i class="fa fa-user"></i>
-				{translate key='Users'}
-			</button>
-			<button id="promptForGroupInvitees" type="button" class="btn btn-link inline">
-				<i class="fa fa-users"></i>
-				{translate key='Groups'}
-			</button>
-			{if $AllowGuestParticipation}
-				<button id="promptForGuests" type="button" class="btn btn-link inline">
-					<i class="fa fa-user-plus"></i>
-					{translate key='Guest'}
-				</button>
-			{/if}
-		</div>
+         
 
 		<div id="inviteeList">
 		</div>
