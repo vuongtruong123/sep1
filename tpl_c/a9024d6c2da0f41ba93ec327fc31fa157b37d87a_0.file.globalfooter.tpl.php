@@ -24,7 +24,7 @@ function content_5d1c2adf437804_24481686 (Smarty_Internal_Template $_smarty_tpl)
 ?>
 
 
-	</div><!-- close main-->
+</div><!-- close main-->
 
 
 	<footer class="footer navbar" >

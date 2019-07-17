@@ -1215,8 +1215,8 @@ tr.today td.reslabel {
   color: #000000 !important;
 }
 .unreservable {
-  background-color: #CF9D9B !important;
-  color: #fff !important;
+  background-color: #203764 !important;
+  color: #ffffff !important;
 }
 td.reservable,
 div.reservable {
@@ -1224,8 +1224,8 @@ div.reservable {
   color: #333 !important;
 }
 .reserved {
-  background-color: #408AD2 !important;
-  color: #fff !important;
+  background-color: #70AD47 !important;
+  color: #ffffff !important;
 }
 td.reserved {
   padding-left: 1px;
@@ -1259,8 +1259,8 @@ td.dropped {
   background-color: #a979d1 !important;
 }
 .reserved.pending {
-  background-color: #ffb540 !important;
-  color: black !important;
+  background-color: #ED7D31 !important;
+  color: #ffffff !important;
 }
 .reserved.pending.hilite {
   background-color: #ffc973 !important;
@@ -1280,7 +1280,9 @@ td.dropped {
   background-color: #1979CF !important;
 }
 .pasttime {
-  background-color: #BDBDBD !important;
+  background-color: #808080 !important;
+  color: #ffffff !important;
+
 }
 .restricted {
   background: repeating-linear-gradient(45deg, transparent, transparent 10px, #ccc 10px, #ccc 20px), linear-gradient(to bottom, #eee, #999);
@@ -1316,13 +1318,14 @@ td.resourcename.hilite {
   background-color: #fbffc2 !important;
 }
 div.legend {
-  line-height: 22px;
-  width: 110px;
+  line-height: 40px;
+  width: 200px;
 /*  border: solid #555 1px;
 */  text-align: center;
   display: inline-block;
   *display: inline;
   margin: 0 2px;
+  font-size: 15px;
 /*  -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;*/

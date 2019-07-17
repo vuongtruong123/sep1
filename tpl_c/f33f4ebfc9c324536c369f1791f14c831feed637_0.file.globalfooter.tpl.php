@@ -24,9 +24,10 @@ function content_5d1c2dec156da1_48838684 (Smarty_Internal_Template $_smarty_tpl)
 ?>
 
 
-	</div><!-- close main-->
+</div><!-- close main-->
 
-		<footer class="footer navbar" >
+
+	<footer class="footer navbar" >
 		<div style="text-align: center;" class="col-md-6">
 
 <img style=" width: 550px; height: 200px; float: left;" src="img/booked.png?2.6">
@@ -34,8 +35,8 @@ function content_5d1c2dec156da1_48838684 (Smarty_Internal_Template $_smarty_tpl)
 </div>
 
 <div style="float:right;" class="col-md-6">
-<h5 style="margin-left: 140px; color: black;"><b>Địa Chỉ:</b></h5> 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.631923241259!2d106.69112221411635!3d10.762824562389296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f16ad86371b%3A0x949d258c9508b1f2!2zxJDhuqFpIGjhu41jIFbEg24gTGFuZyBjxqEgc-G7nw!5e0!3m2!1svi!2s!4v1561517243608!5m2!1svi!2s"width="500" height="200" frameborder="0"  style="float:right;" allowfullscreen>
+<h5 style="margin-left: 220px; color: black;"><b>Địa Chỉ:</b></h5> 
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.631923241259!2d106.69112221411635!3d10.762824562389296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f16ad86371b%3A0x949d258c9508b1f2!2zxJDhuqFpIGjhu41jIFbEg24gTGFuZyBjxqEgc-G7nw!5e0!3m2!1svi!2s!4v1561517243608!5m2!1svi!2s"width="500" height="250" frameborder="0"  style="float:right;" allowfullscreen>
 	 
 </iframe>
 </div>

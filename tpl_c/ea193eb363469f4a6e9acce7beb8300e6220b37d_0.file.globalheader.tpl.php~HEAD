@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-07-17 04:39:53
+/* Smarty version 3.1.30, created on 2019-07-05 05:18:37
   from "C:\xampp\htdocs\sep1\tpl\globalheader.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d2e8a795c1d01_61594203',
+  'unifunc' => 'content_5d1ec18dc86120_23212245',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '081ec37c1d9aa77db3eeff6e2d84cebce945d19b' => 
+    'ea193eb363469f4a6e9acce7beb8300e6220b37d' => 
     array (
       0 => 'C:\\xampp\\htdocs\\sep1\\tpl\\globalheader.tpl',
-      1 => 1563331169,
+      1 => 1562295900,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d2e8a795c1d01_61594203 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d1ec18dc86120_23212245 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 
@@ -225,28 +225,12 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
             </div>
             <div class="collapse navbar-collapse" id="booked-navigation">
                 <ul class="nav navbar-nav">
-                    <li class="dropdown" id="navHelpDropdown">
-                            <li id="navschedule"><a href="<?php echo $_smarty_tpl->tpl_vars['Path']->value;?>
-view-schedule.php">Trang chủ</a></li>
-                            
-                            <li id="navAbout"><a href="<?php echo $_smarty_tpl->tpl_vars['Path']->value;?>
-help.php?ht=about"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'About'),$_smarty_tpl);?>
-</a></li>
-                            <li id="navHelp"><a href="<?php echo $_smarty_tpl->tpl_vars['Path']->value;?>
-help.php"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'Help'),$_smarty_tpl);?>
-</a></li>
-                            <?php if ($_smarty_tpl->tpl_vars['CanViewAdmin']->value) {?>
-                                <!-- <li id="navHelpAdmin"><a
-                                        href="<?php echo $_smarty_tpl->tpl_vars['Path']->value;?>
-help.php?ht=admin"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'Administration'),$_smarty_tpl);?>
-</a></li> --><?php }?>
-                    </li>
                     <?php if ($_smarty_tpl->tpl_vars['LoggedIn']->value) {?>
-                        <!-- <li id="navDashboard"><a href="<?php echo $_smarty_tpl->tpl_vars['Path']->value;
+                        <li id="navDashboard"><a href="<?php echo $_smarty_tpl->tpl_vars['Path']->value;
 echo Pages::DASHBOARD;?>
 "><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>"Dashboard"),$_smarty_tpl);?>
-</a></li> -->
-                        <!-- <li class="dropdown" id="navMyAccountDropdown">
+</a></li>
+                        <li class="dropdown" id="navMyAccountDropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>"MyAccount"),$_smarty_tpl);?>
  <b
                                         class="caret"></b></a>
@@ -283,7 +267,7 @@ echo Pages::CREDITS;?>
                                     </li>
                                 <?php }?>
                             </ul>
-                        </li> -->
+                        </li>
                         <li class="dropdown" id="navScheduleDropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>"Schedule"),$_smarty_tpl);?>
  <b
@@ -454,7 +438,7 @@ admin/manage_announcements.php"><?php echo $_smarty_tpl->smarty->registered_plug
                                 </ul>
                             </li>
                         <?php }?>
-                        <!-- <?php if ($_smarty_tpl->tpl_vars['CanViewReports']->value) {?>
+                        <?php if ($_smarty_tpl->tpl_vars['CanViewReports']->value) {?>
                             <li class="dropdown" id="navReportsDropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>"Reports"),$_smarty_tpl);?>
  <b
@@ -480,7 +464,7 @@ reports/<?php echo Pages::REPORTS_COMMON;?>
                                     </li>
                                 </ul>
                             </li>
-                        <?php }?> -->
+                        <?php }?>
                     <?php }?>
 
                 </ul>
@@ -552,7 +536,24 @@ admin/data_cleanup.php"><?php echo $_smarty_tpl->smarty->registered_plugins[Smar
                             </ul>
                         </li>
                     <?php }?>
-                    
+                    <li class="dropdown" id="navHelpDropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>"Help"),$_smarty_tpl);?>
+ <b
+                                    class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li id="navHelp"><a href="<?php echo $_smarty_tpl->tpl_vars['Path']->value;?>
+help.php"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'Help'),$_smarty_tpl);?>
+</a></li>
+                            <?php if ($_smarty_tpl->tpl_vars['CanViewAdmin']->value) {?>
+                                <li id="navHelpAdmin"><a
+                                        href="<?php echo $_smarty_tpl->tpl_vars['Path']->value;?>
+help.php?ht=admin"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'Administration'),$_smarty_tpl);?>
+</a></li><?php }?>
+                            <li id="navAbout"><a href="<?php echo $_smarty_tpl->tpl_vars['Path']->value;?>
+help.php?ht=about"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'About'),$_smarty_tpl);?>
+</a></li>
+                        </ul>
+                    </li>
                     <?php if ($_smarty_tpl->tpl_vars['LoggedIn']->value) {?>
                         <li id="navSignOut"><a href="<?php echo $_smarty_tpl->tpl_vars['Path']->value;?>
 logout.php"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>"SignOut"),$_smarty_tpl);?>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-07-05 05:18:38
+/* Smarty version 3.1.30, created on 2019-07-08 04:20:02
   from "C:\xampp\htdocs\sep1\tpl\javascript-includes.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d1ec18e4f55b5_35450391',
+  'unifunc' => 'content_5d22a852b5f031_04645440',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2645bd28a5b4e648280825879226bf161465ae76' => 
     array (
       0 => 'C:\\xampp\\htdocs\\sep1\\tpl\\javascript-includes.tpl',
-      1 => 1562295900,
+      1 => 1562290910,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d1ec18e4f55b5_35450391 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d22a852b5f031_04645440 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <?php if ($_smarty_tpl->tpl_vars['UseLocalJquery']->value) {?>

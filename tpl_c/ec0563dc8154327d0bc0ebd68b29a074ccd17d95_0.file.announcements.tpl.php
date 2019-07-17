@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-07-03 09:17:22
+/* Smarty version 3.1.30, created on 2019-07-17 04:39:54
   from "C:\xampp\htdocs\sep1\tpl\Dashboard\announcements.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d1c568211a420_89155065',
+  'unifunc' => 'content_5d2e8a7a20d642_69036028',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ec0563dc8154327d0bc0ebd68b29a074ccd17d95' => 
     array (
       0 => 'C:\\xampp\\htdocs\\sep1\\tpl\\Dashboard\\announcements.tpl',
-      1 => 1562118978,
+      1 => 1563302068,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d1c568211a420_89155065 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d2e8a7a20d642_69036028 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <div class="dashboard" id="announcementsDashboard">
