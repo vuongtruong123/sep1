@@ -138,18 +138,18 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 				</div>
 				<?php }?>
 
-				<?php if ($_smarty_tpl->tpl_vars['ShowUsernamePrompt']->value && $_smarty_tpl->tpl_vars['ShowPasswordPrompt']->value) {?>
-				<div class="col-xs-12 <?php if ($_smarty_tpl->tpl_vars['ShowRegisterLink']->value) {?>col-sm-6<?php }?>">
+			<!-- 	<?php if ($_smarty_tpl->tpl_vars['ShowUsernamePrompt']->value && $_smarty_tpl->tpl_vars['ShowPasswordPrompt']->value) {?>
+				 <div class="col-xs-12 <?php if ($_smarty_tpl->tpl_vars['ShowRegisterLink']->value) {?>col-sm-6<?php }?>">
 					<div class="checkbox">
 						<input id="rememberMe" type="checkbox" <?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['formname'][0][0]->GetFormName(array('key'=>'PERSIST_LOGIN'),$_smarty_tpl);?>
 >
 						<label for="rememberMe"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'RememberMe'),$_smarty_tpl);?>
 </label>
 					</div>
-				</div>
-				<?php }?>
+				</div> -->
+				<?php }?> 
 
-                <?php if ($_smarty_tpl->tpl_vars['ShowRegisterLink']->value) {?>
+                <!-- <?php if ($_smarty_tpl->tpl_vars['ShowRegisterLink']->value) {?>
                     <div class="col-xs-12 col-sm-6 register">
                     <span class="bold"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>"FirstTimeUser?"),$_smarty_tpl);?>
 
@@ -161,7 +161,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 </a>
                     </span>
                     </div>
-                <?php }?>
+                <?php }?> -->
 
 				<div class="clearfix"></div>
 
@@ -174,16 +174,16 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 				<?php }?>
 
 				<?php if ($_smarty_tpl->tpl_vars['AllowGoogleLogin']->value) {?>
-					<div class="<?php echo $_smarty_tpl->tpl_vars['socialClass']->value;?>
+					<!-- <div class="<?php echo $_smarty_tpl->tpl_vars['socialClass']->value;?>
  social-login" id="socialLoginGoogle">
 						<a href="https://accounts.google.com/o/oauth2/v2/auth?scope=email%20profile&state=<?php echo $_smarty_tpl->tpl_vars['GoogleState']->value;?>
 &redirect_uri=https://www.social.twinkletoessoftware.com/googleresume.php&response_type=code&client_id=531675809673-3sfvrchh6svd9bfl7m55dao8n4s6cqpc.apps.googleusercontent.com">
 							<img src="img/external/btn_google_signin_dark_normal_web.png" alt="Sign in with Google"/>
 						</a>
-					</div>
+					</div> -->
 				<?php }?>
 				<?php if ($_smarty_tpl->tpl_vars['AllowFacebookLogin']->value) {?>
-					<div class="<?php echo $_smarty_tpl->tpl_vars['socialClass']->value;?>
+				<!-- 	<div class="<?php echo $_smarty_tpl->tpl_vars['socialClass']->value;?>
  social-login" id="socialLoginFacebook">
 						<a href="https://www.social.twinkletoessoftware.com/fblogin.php?protocol=<?php echo $_smarty_tpl->tpl_vars['Protocol']->value;?>
 &resume=<?php echo $_smarty_tpl->tpl_vars['ScriptUrlNoProtocol']->value;?>
@@ -191,20 +191,20 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 ">
 							<img style="max-height:42px" src="img/external/btn_facebook_login.png" alt="Sign in with Facebook"/>
 						</a>
-					</div>
+					</div> -->
 				<?php }?>
 			</div>
 			<div id="login-footer" class="col-xs-12">
 				<?php if ($_smarty_tpl->tpl_vars['ShowForgotPasswordPrompt']->value) {?>
-					<div id="forgot-password" class="col-xs-12 col-sm-6">
+				<!-- 	<div id="forgot-password" class="col-xs-12 col-sm-6">
 						<a href="<?php echo $_smarty_tpl->tpl_vars['ForgotPasswordUrl']->value;?>
 " <?php echo $_smarty_tpl->tpl_vars['ForgotPasswordUrlNew']->value;?>
  class="btn btn-link pull-left-sm"><span><i
 										class="glyphicon glyphicon-question-sign"></i></span> <?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'ForgotMyPassword'),$_smarty_tpl);?>
 </a>
-					</div>
+					</div> -->
 				<?php }?>
-				<div id="change-language" class="col-xs-12 col-sm-6">
+				<!-- <div id="change-language" class="col-xs-12 col-sm-6">
 					<button type="button" class="btn btn-link pull-right-sm" data-toggle="collapse"
 							data-target="#change-language-options"><span><i class="glyphicon glyphicon-globe"></i></span>
 						<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'ChangeLanguage'),$_smarty_tpl);?>
@@ -217,7 +217,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 
 						</select>
 					</div>
-				</div>
+				</div> -->
 			</div>
 
 

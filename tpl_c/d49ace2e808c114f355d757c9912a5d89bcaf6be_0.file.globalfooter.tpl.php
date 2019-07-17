@@ -23,8 +23,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
 function content_5d138eecb42c03_11581094 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
+</div><!-- close main-->
 
-	</div><!-- close main-->
 
 	<footer class="footer navbar" >
 		<div style="text-align: center;" class="col-md-6">

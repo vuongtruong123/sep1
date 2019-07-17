@@ -24,7 +24,8 @@ function content_5d138ffb2e4eb6_84517605 (Smarty_Internal_Template $_smarty_tpl)
 ?>
 
 
-	</div><!-- close main-->
+</div><!-- close main-->
+
 
 	<footer class="footer navbar" >
 		<div style="text-align: center;" class="col-md-6">
