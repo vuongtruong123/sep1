@@ -603,7 +603,7 @@ class en_us extends Language
         $strings['IcsLocationsAsResources'] = 'Địa điểm sẽ được nhập khẩu dưới dạng tài nguyên.';
         $strings['IcsMissingOrganizer'] = 'Bất kỳ sự kiện nào thiếu một người tổ chức sẽ có chủ sở hữu được đặt thành người dùng hiện tại.';
         $strings['IcsWarning'] = 'Reservation rules will not be enforced - conflicts, duplicates, etc are possible.';
-		$strings['BlackoutAroundConflicts'] = 'Mất điện xung quanh các đặt phòng xung đột';
+		$strings['BlackoutAroundConflicts'] = 'Khóa các phòng xung quanh phòng xung đột';
 		$strings['DuplicateReservation'] = 'Bản sao';
 		$strings['UnavailableNow'] = 'Hiện không có sẵn';
 		$strings['ReserveLater'] = 'Dự trữ sau';
@@ -897,10 +897,10 @@ class en_us extends Language
 		$strings['Bookings'] = 'Đặt chỗ';
 		$strings['Schedule'] = 'Lịch trình';
 		$strings['Account'] = 'Tài khoản';
-		$strings['EditProfile'] = 'Sửa thông tin cá nhân của tôi';
+		$strings['EditProfile'] = 'Sửa thông tin cá nhân';
 		$strings['FindAnOpening'] = 'Tìm và mở';
 		$strings['OpenInvitations'] = 'Lời mời mở';
-		$strings['ResourceCalendar'] = 'Lịch tài nguyên';
+		$strings['ResourceCalendar'] = 'Lịch phòng họp';
 		$strings['Reservation'] = 'Lên lịch họp';
 		$strings['Install'] = 'Installation';
 		$strings['ChangePassword'] = 'Đổi mật khẩu';

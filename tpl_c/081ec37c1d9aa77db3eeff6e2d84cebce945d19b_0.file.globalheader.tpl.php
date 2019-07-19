@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-07-17 04:39:53
+/* Smarty version 3.1.30, created on 2019-07-19 04:51:33
   from "C:\xampp\htdocs\sep1\tpl\globalheader.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d2e8a795c1d01_61594203',
+  'unifunc' => 'content_5d313035d7f575_97396476',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '081ec37c1d9aa77db3eeff6e2d84cebce945d19b' => 
     array (
       0 => 'C:\\xampp\\htdocs\\sep1\\tpl\\globalheader.tpl',
-      1 => 1563331169,
+      1 => 1563503606,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d2e8a795c1d01_61594203 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d313035d7f575_97396476 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 
@@ -306,11 +306,11 @@ echo Pages::CALENDAR;?>
 </a></li>
                                 <!--<li class="menuitem"><a href="#"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>"Current Status"),$_smarty_tpl);?>
 </a></li>-->
-                                <li id="navFindATime"><a href="<?php echo $_smarty_tpl->tpl_vars['Path']->value;
+                                <!-- <li id="navFindATime"><a href="<?php echo $_smarty_tpl->tpl_vars['Path']->value;
 echo Pages::OPENINGS;?>
 "><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>"FindATime"),$_smarty_tpl);?>
 </a>
-                                </li>
+                                </li> -->
                                 <li id="navFindATime"><a
                                             href="<?php echo $_smarty_tpl->tpl_vars['Path']->value;
 echo Pages::SEARCH_RESERVATIONS;?>
@@ -342,10 +342,10 @@ admin/manage_quotas.php"><?php echo $_smarty_tpl->smarty->registered_plugins[Sma
 </a>
                                     </li>
                                     <li class="divider"></li>
-                                    <li id="navManageSchedules"><a
+                                    <li id="navManageSchedules"><!-- <a
                                                 href="<?php echo $_smarty_tpl->tpl_vars['Path']->value;?>
 admin/manage_schedules.php"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>"ManageSchedules"),$_smarty_tpl);?>
-</a>
+</a> -->
                                     <li id="navManageResources"><a
                                                 href="<?php echo $_smarty_tpl->tpl_vars['Path']->value;?>
 admin/manage_resources.php"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>"ManageResources"),$_smarty_tpl);?>
@@ -369,11 +369,11 @@ admin/manage_groups.php"><?php echo $_smarty_tpl->smarty->registered_plugins[Sma
 </a>
                                     </li>
 
-                                    <li id="navManageAnnouncements"><a
+                                    <!-- <li id="navManageAnnouncements"><a
                                                 href="<?php echo $_smarty_tpl->tpl_vars['Path']->value;?>
 admin/manage_announcements.php"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>"ManageAnnouncements"),$_smarty_tpl);?>
 </a>
-                                    </li>
+                                    </li> -->
                                     <li class="divider"></li>
                                     <?php if ($_smarty_tpl->tpl_vars['PaymentsEnabled']->value) {?>
                                         <li id="navManagePayments"><a
@@ -383,11 +383,11 @@ admin/manage_payments.php"><?php echo $_smarty_tpl->smarty->registered_plugins[S
                                         </li>
                                     <?php }?>
                                     
-                                    <li id="navManageAttributes"><a
+                                    <!-- <li id="navManageAttributes"><a
                                                 href="<?php echo $_smarty_tpl->tpl_vars['Path']->value;?>
 admin/manage_attributes.php"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>"CustomAttributes"),$_smarty_tpl);?>
 </a>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </li>
                         <?php }?>

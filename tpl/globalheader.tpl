@@ -191,8 +191,8 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                                 <li id="navResourceCalendar"><a
                                             href="{$Path}{Pages::CALENDAR}">{translate key="ResourceCalendar"}</a></li>
                                 <!--<li class="menuitem"><a href="#">{translate key="Current Status"}</a></li>-->
-                                <li id="navFindATime"><a href="{$Path}{Pages::OPENINGS}">{translate key="FindATime"}</a>
-                                </li>
+                                <!-- <li id="navFindATime"><a href="{$Path}{Pages::OPENINGS}">{translate key="FindATime"}</a>
+                                </li> -->
                                 <li id="navFindATime"><a
                                             href="{$Path}{Pages::SEARCH_RESERVATIONS}">{translate key="SearchReservations"}</a>
                                 </li>
@@ -214,8 +214,8 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                                                 href="{$Path}admin/manage_quotas.php">{translate key="ManageQuotas"}</a>
                                     </li>
                                     <li class="divider"></li>
-                                    <li id="navManageSchedules"><a
-                                                href="{$Path}admin/manage_schedules.php">{translate key="ManageSchedules"}</a>
+                                    <li id="navManageSchedules"><!-- <a
+                                                href="{$Path}admin/manage_schedules.php">{translate key="ManageSchedules"}</a> -->
                                     <li id="navManageResources"><a
                                                 href="{$Path}admin/manage_resources.php">{translate key="ManageResources"}</a>
                                     </li>
@@ -231,9 +231,9 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                                                 href="{$Path}admin/manage_groups.php">{translate key="ManageGroups"}</a>
                                     </li>
 
-                                    <li id="navManageAnnouncements"><a
+                                    <!-- <li id="navManageAnnouncements"><a
                                                 href="{$Path}admin/manage_announcements.php">{translate key="ManageAnnouncements"}</a>
-                                    </li>
+                                    </li> -->
                                     <li class="divider"></li>
                                     {if $PaymentsEnabled}
                                         <li id="navManagePayments"><a
@@ -241,9 +241,9 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                                         </li>
                                     {/if}
                                     {*<li class="dropdown-header">{translate key=Customization}</li>*}
-                                    <li id="navManageAttributes"><a
+                                    <!-- <li id="navManageAttributes"><a
                                                 href="{$Path}admin/manage_attributes.php">{translate key="CustomAttributes"}</a>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </li>
                         {/if}

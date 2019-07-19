@@ -119,7 +119,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                 {assign var=titleWidth value="col-sm-12 col-xs-12"}
                 {if !$HideSchedule}
                     {assign var=titleWidth value="col-sm-6 col-xs-12"}
-                    <!-- <div id="schedule-actions" class="col-sm-3 col-xs-12">
+                    <div id="schedule-actions" class="col-sm-3 col-xs-12">
                         {block name="actions"}
                             <a href="#" id="make_default"
                                style="display:none;">{html_image src="star_boxed_full.png" altKey="MakeDefaultSchedule"}</a>
@@ -140,10 +140,10 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                                 {/if}
                             </div>
                         {/block}
-                    </div> -->
+                    </div>
                 {/if}
 
-<!--                 <div id="schedule-title" class="schedule_title {$titleWidth} col-xs-12">
+                <div id="schedule-title" class="schedule_title {$titleWidth} col-xs-12">
                     <label for="schedules" class="no-show">Schedule</label>
                     <select id="schedules" class="form-control" style="width:auto;">
                         {foreach from=$Schedules item=schedule}
@@ -166,7 +166,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                         </a>
                     </div>
                     <div id="individualDatesList"></div>
-                </div> -->
+                </div>
 
                 {capture name="date_navigation"}
                     {if !$HideSchedule}
@@ -257,8 +257,8 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                         <div class="legend unreservable">{translate key=Unreservable}</div>
                         <div class="legend reserved">{translate key=Reserved}</div>
                         {if $LoggedIn}
-<!--                             <div class="legend reserved mine">{translate key=MyReservation}</div>
-                            <div class="legend reserved participating">{translate key=Participant}</div> -->
+                            <div class="legend reserved mine">{translate key=MyReservation}</div>
+                            <!-- <div class="legend reserved participating">{translate key=Participant}</div> -->
                         {/if}
                         <div class="legend reserved pending">{translate key=Pending}</div>
                         <div class="legend pasttime">{translate key=Past}</div>
