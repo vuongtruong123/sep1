@@ -58,7 +58,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 				{/if}
 
 				{if $ShowPasswordPrompt}
-					<div class="col-xs-12">
+				<!--	<div class="col-xs-12">
 						<div class="input-group margin-bottom-25">
 							<span class="input-group-addon">
 							<i class="glyphicon glyphicon-lock"></i>
@@ -67,7 +67,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 								   class="form-control"
 								   value="" placeholder="{translate key=Password}"/>
 						</div>
-					</div>
+					</div> -->
 				{/if}
 
                 {if $EnableCaptcha}
@@ -89,26 +89,26 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 				{/if}
 
 				{if $ShowUsernamePrompt &&  $ShowPasswordPrompt}
-				<div class="col-xs-12 {if $ShowRegisterLink}col-sm-6{/if}">
+				<!-- <div class="col-xs-12 {if $ShowRegisterLink}col-sm-6{/if}">
 					<div class="checkbox">
 						<input id="rememberMe" type="checkbox" {formname key=PERSIST_LOGIN}>
 						<label for="rememberMe">{translate key=RememberMe}</label>
 					</div>
-				</div>
+				</div> -->
 				{/if}
 
                 {if $ShowRegisterLink}
-                    <div class="col-xs-12 col-sm-6 register">
+                   <!-- <div class="col-xs-12 col-sm-6 register">
                     <span class="bold">{translate key="FirstTimeUser?"}
                     <a href="{$RegisterUrl}" {$RegisterUrlNew}
                        title="{translate key=Register}">{translate key=Register}</a>
                     </span>
-                    </div>
+                    </div> -->
                 {/if}
 
 				<div class="clearfix"></div>
 
-				{if $AllowGoogleLogin && $AllowFacebookLogin}
+				 <!-- {if $AllowGoogleLogin && $AllowFacebookLogin}
 					{assign var=socialClass value="col-sm-12 col-md-6"}
 				{else}
 					{assign var=socialClass value="col-sm-12"}
@@ -120,23 +120,23 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 							<img src="img/external/btn_google_signin_dark_normal_web.png" alt="Sign in with Google"/>
 						</a>
 					</div>
-				{/if}
+				{/if} 
 				{if $AllowFacebookLogin}
 					<div class="{$socialClass} social-login" id="socialLoginFacebook">
 						<a href="https://www.social.twinkletoessoftware.com/fblogin.php?protocol={$Protocol}&resume={$ScriptUrlNoProtocol}/external-auth.php%3Ftype%3Dfb%26redirect%3D{$ResumeUrl}">
 							<img style="max-height:42px" src="img/external/btn_facebook_login.png" alt="Sign in with Facebook"/>
 						</a>
 					</div>
-				{/if}
+				{/if} -->
 			</div>
 			<div id="login-footer" class="col-xs-12">
-				{if $ShowForgotPasswordPrompt}
+				<!-- {if $ShowForgotPasswordPrompt}
 					<div id="forgot-password" class="col-xs-12 col-sm-6">
 						<a href="{$ForgotPasswordUrl}" {$ForgotPasswordUrlNew} class="btn btn-link pull-left-sm"><span><i
 										class="glyphicon glyphicon-question-sign"></i></span> {translate key='ForgotMyPassword'}</a>
 					</div>
-				{/if}
-				<div id="change-language" class="col-xs-12 col-sm-6">
+				{/if} -->
+			<!-- 	<div id="change-language" class="col-xs-12 col-sm-6">
 					<button type="button" class="btn btn-link pull-right-sm" data-toggle="collapse"
 							data-target="#change-language-options"><span><i class="glyphicon glyphicon-globe"></i></span>
 						{translate key=ChangeLanguage}
@@ -146,7 +146,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 							{object_html_options options=$Languages key='GetLanguageCode' label='GetDisplayName' selected=$SelectedLanguage}
 						</select>
 					</div> 
-				</div>
+				</div> -->
 			</div>
 
 
