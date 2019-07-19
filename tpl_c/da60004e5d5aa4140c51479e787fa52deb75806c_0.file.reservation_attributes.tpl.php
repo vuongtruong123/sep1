@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-07-15 05:25:40
+/* Smarty version 3.1.30, created on 2019-07-17 05:48:37
   from "C:\xampp\htdocs\sep1\tpl\Ajax\reservation\reservation_attributes.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d2bf234477cc8_33123067',
+  'unifunc' => 'content_5d2e9a95f23406_97444675',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '6b765cf2ec9f40b33cbbb002058c5617d4c9fcbf' => 
+    'da60004e5d5aa4140c51479e787fa52deb75806c' => 
     array (
       0 => 'C:\\xampp\\htdocs\\sep1\\tpl\\Ajax\\reservation\\reservation_attributes.tpl',
-      1 => 1562295900,
+      1 => 1563302068,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d2bf234477cc8_33123067 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d2e9a95f23406_97444675 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 

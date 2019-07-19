@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-07-15 05:49:47
+/* Smarty version 3.1.30, created on 2019-07-17 05:36:04
   from "C:\xampp\htdocs\sep1\tpl\Admin\Resources\manage_resources_groups.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d2bf7db5d0084_89069871',
+  'unifunc' => 'content_5d2e97a4416242_25114170',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'ba9a27cdea782fd1bfb7cc9ece0324363cd1030e' => 
+    '88b1f5d9eb83d9ec88bf6278b71006266035ec90' => 
     array (
       0 => 'C:\\xampp\\htdocs\\sep1\\tpl\\Admin\\Resources\\manage_resources_groups.tpl',
-      1 => 1563162001,
+      1 => 1563302068,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d2bf7db5d0084_89069871 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d2e97a4416242_25114170 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <?php if (count($_smarty_tpl->tpl_vars['resource']->value->GetResourceGroupIds()) == 0) {?>

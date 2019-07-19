@@ -279,39 +279,6 @@ class en_us extends Language
 		$strings['Login'] = 'Đăng Nhập';
 		$strings['AdditionalInformation'] = 'Thông tin thêm';
 		$strings['AllFieldsAreRequired'] = 'all fields are required';
-<<<<<<< HEAD
-		$strings['Optional'] = 'optional';
-		$strings['YourProfileWasUpdated'] = 'Your profile was updated';
-		$strings['YourSettingsWereUpdated'] = 'Your settings were updated';
-		$strings['Register'] = 'Register';
-		$strings['SecurityCode'] = 'Security Code';
-		$strings['ReservationCreatedPreference'] = 'When I create a reservation or a reservation is created on my behalf';
-		$strings['ReservationUpdatedPreference'] = 'When I update a reservation or a reservation is updated on my behalf';
-		$strings['ReservationDeletedPreference'] = 'When I delete a reservation or a reservation is deleted on my behalf';
-		$strings['ReservationApprovalPreference'] = 'When my pending reservation is approved';
-		$strings['PreferenceSendEmail'] = 'Send me an email';
-		$strings['PreferenceNoEmail'] = 'Do not notify me';
-		$strings['ReservationCreated'] = 'Your reservation was successfully created!';
-		$strings['ReservationUpdated'] = 'Your reservation was successfully updated!';
-		$strings['ReservationRemoved'] = 'Your reservation was removed';
-		$strings['ReservationRequiresApproval'] = 'One or more of the resources reserved require approval before usage.  This reservation will be pending until it is approved.';
-		$strings['YourReferenceNumber'] = 'Your reference number is %s';
-		$strings['ChangeUser'] = 'Change User';
-		$strings['MoreResources'] = 'More Resources';
-		$strings['ReservationLength'] = 'Reservation Length';
-		$strings['note'] = 'Note';
-		$strings['AddParticipants'] = 'Add Participants';
-		$strings['InviteOthers'] = 'Invite Others';
-		$strings['AddResources'] = 'Add Resources';
-		$strings['AddAccessories'] = 'Add Accessories';
-		$strings['Accessory'] = 'Accessory';
-		$strings['QuantityRequested'] = 'Quantity Requested';
-		$strings['CreatingReservation'] = 'Creating Reservation';
-		$strings['UpdatingReservation'] = 'Updating Reservation';
-		$strings['DeleteWarning'] = 'This action is permanent and cannot be undone!';
-		$strings['DeleteAccessoryWarning'] = 'Deleting this accessory will remove it from all reservations.';
-		$strings['AddAccessory'] = 'Add Accessory';
-=======
 		$strings['Optional'] = 'Tùy Chọn';
 		$strings['YourProfileWasUpdated'] = 'Hồ sơ của bạn đã được cập nhật';
 		$strings['YourSettingsWereUpdated'] = 'Cấu hình của bạn đã được cập nhật';
@@ -343,7 +310,6 @@ class en_us extends Language
 		$strings['DeleteWarning'] = 'Hành động này là vĩnh viễn và không thể phục hồi!';
 		$strings['DeleteAccessoryWarning'] = 'Xóa phụ kiện này sẽ xóa nó khỏi tất cả các đặt phòng.';
 		$strings['AddAccessory'] = 'Thêm phụ kiện';
->>>>>>> ae31027623359a5dc5a88445630ae11f22c30c86
 		$strings['AddBlackout'] = 'Add Blackout';
 		$strings['AllResourcesOn'] = 'Tất cả tài nguyên trên';
 		$strings['Reason'] = 'Lý do';

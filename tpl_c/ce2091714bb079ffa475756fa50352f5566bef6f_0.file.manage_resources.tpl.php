@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-07-15 05:49:47
+/* Smarty version 3.1.30, created on 2019-07-17 05:36:01
   from "C:\xampp\htdocs\sep1\tpl\Admin\Resources\manage_resources.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d2bf7db484040_56948359',
+  'unifunc' => 'content_5d2e97a106f295_80005938',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '59916caa3c377275bd29c6b425d3e445bdcc0849' => 
+    'ce2091714bb079ffa475756fa50352f5566bef6f' => 
     array (
       0 => 'C:\\xampp\\htdocs\\sep1\\tpl\\Admin\\Resources\\manage_resources.tpl',
-      1 => 1563162001,
+      1 => 1563302068,
       2 => 'file',
     ),
   ),
@@ -30,7 +30,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:globalfooter.tpl' => 1,
   ),
 ),false)) {
-function content_5d2bf7db484040_56948359 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d2e97a106f295_80005938 (Smarty_Internal_Template $_smarty_tpl) {
 if (!is_callable('smarty_function_html_options')) require_once 'C:\\xampp\\htdocs\\sep1\\lib\\external\\Smarty\\plugins\\function.html_options.php';
 ?>
 

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-07-15 05:49:47
+/* Smarty version 3.1.30, created on 2019-07-17 05:36:04
   from "C:\xampp\htdocs\sep1\tpl\Admin\Resources\manage_resources_public.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d2bf7db5f7183_87630844',
+  'unifunc' => 'content_5d2e97a44c7910_28415369',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '44d915ec3ba593af22ba51f95366cda5b1350acf' => 
+    'fd777563f6af295aa7c9e56128413455e0ded610' => 
     array (
       0 => 'C:\\xampp\\htdocs\\sep1\\tpl\\Admin\\Resources\\manage_resources_public.tpl',
-      1 => 1563162001,
+      1 => 1563302068,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d2bf7db5f7183_87630844 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d2e97a44c7910_28415369 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <?php if ($_smarty_tpl->tpl_vars['resource']->value->GetIsCalendarSubscriptionAllowed()) {?>

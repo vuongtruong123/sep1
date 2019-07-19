@@ -259,7 +259,7 @@ class vn_vn extends en_gb
 		$strings['ChangeUser'] = 'Change User';
 		$strings['MoreResources'] = 'More Resources';
 		$strings['ReservationLength'] = 'Thời gian họp là: ';
-		$strings['ParticipantList'] = 'ghi chú ';
+		$strings['ParticipantList'] = 'Danh sách người tham dự họp:';
 		$strings['AddParticipants'] = 'Thêm người tham dự';
 		$strings['InviteOthers'] = 'Thêm người họp khác:';
 		$strings['AddResources'] = 'Tất cả các phòng họp:';
