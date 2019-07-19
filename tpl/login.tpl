@@ -58,7 +58,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 				{/if}
 
 				{if $ShowPasswordPrompt}
-				<!--	<div class="col-xs-12">
+					<div class="col-xs-12">
 						<div class="input-group margin-bottom-25">
 							<span class="input-group-addon">
 							<i class="glyphicon glyphicon-lock"></i>
@@ -67,7 +67,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 								   class="form-control"
 								   value="" placeholder="{translate key=Password}"/>
 						</div>
-					</div> -->
+					</div> 
 				{/if}
 
                 {if $EnableCaptcha}
