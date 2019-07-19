@@ -25,6 +25,7 @@ function content_5d1c2ad7d58ce1_18594358 (Smarty_Internal_Template $_smarty_tpl)
 
 
 	</div><!-- close main-->
+<<<<<<< HEAD
 
 
 	<footer class="footer navbar" >
@@ -40,7 +41,12 @@ function content_5d1c2ad7d58ce1_18594358 (Smarty_Internal_Template $_smarty_tpl)
 	 
 </iframe>
 </div>
+=======
+>>>>>>> 2bb7d987d09843d169e445b045b45eb5c1999198
 
+	<footer class="footer navbar">
+		&copy; 2019 <a href="http://www.twinkletoessoftware.com">Twinkle Toes Software</a> <br/><a href="http://www.bookedscheduler.com">Booked Scheduler v<?php echo $_smarty_tpl->tpl_vars['Version']->value;?>
+</a>
 	</footer>
 	<?php echo '<script'; ?>
  type="text/javascript">

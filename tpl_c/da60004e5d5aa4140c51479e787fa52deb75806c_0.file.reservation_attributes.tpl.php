@@ -1,18 +1,30 @@
 <?php
+<<<<<<< HEAD
 /* Smarty version 3.1.30, created on 2019-07-17 06:02:50
+=======
+/* Smarty version 3.1.30, created on 2019-07-17 05:48:37
+>>>>>>> 2bb7d987d09843d169e445b045b45eb5c1999198
   from "C:\xampp\htdocs\sep1\tpl\Ajax\reservation\reservation_attributes.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
+<<<<<<< HEAD
   'unifunc' => 'content_5d2e9dea8ddee3_96508286',
+=======
+  'unifunc' => 'content_5d2e9a95f23406_97444675',
+>>>>>>> 2bb7d987d09843d169e445b045b45eb5c1999198
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'da60004e5d5aa4140c51479e787fa52deb75806c' => 
     array (
       0 => 'C:\\xampp\\htdocs\\sep1\\tpl\\Ajax\\reservation\\reservation_attributes.tpl',
+<<<<<<< HEAD
       1 => 1563162001,
+=======
+      1 => 1563302068,
+>>>>>>> 2bb7d987d09843d169e445b045b45eb5c1999198
       2 => 'file',
     ),
   ),
@@ -20,7 +32,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
+<<<<<<< HEAD
 function content_5d2e9dea8ddee3_96508286 (Smarty_Internal_Template $_smarty_tpl) {
+=======
+function content_5d2e9a95f23406_97444675 (Smarty_Internal_Template $_smarty_tpl) {
+>>>>>>> 2bb7d987d09843d169e445b045b45eb5c1999198
 ?>
 
 

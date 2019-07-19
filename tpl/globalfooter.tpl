@@ -17,6 +17,7 @@ You should have received a copy of the GNU General Public License
 along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 *}
 
+<<<<<<< HEAD
 </div><!-- close main-->
 
 
@@ -42,7 +43,12 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 	 
 </iframe>
 </div>
+=======
+	</div><!-- close main-->
+>>>>>>> 2bb7d987d09843d169e445b045b45eb5c1999198
 
+	<footer class="footer navbar">
+		&copy; 2019 <a href="http://www.twinkletoessoftware.com">Twinkle Toes Software</a> <br/><a href="http://www.bookedscheduler.com">Booked Scheduler v{$Version}</a>
 	</footer>
 
 	<script type="text/javascript">

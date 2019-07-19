@@ -33,7 +33,7 @@ $conf['settings']['admin.email.name'] = 'Booked Administrator';	// name to be us
 $conf['settings']['default.page.size'] = '50';                  // number of records per page
 $conf['settings']['enable.email'] = 'true';                     // global configuration to enable if any emails will be sent
 $conf['settings']['default.language'] = 'en_us';                // find your language in the lang directory
-$conf['settings']['script.url'] = 'http://localhost:8080/sep1';   	// public URL to the Web directory of this instance. this is the URL that appears when you are logging in. leave http: or https: off to auto-detect
+$conf['settings']['script.url'] = 'http:';   	// public URL to the Web directory of this instance. this is the URL that appears when you are logging in. leave http: or https: off to auto-detect
 $conf['settings']['image.upload.directory'] = 'Web/uploads/images'; // full or relative path to where images will be stored
 $conf['settings']['image.upload.url'] = 'uploads/images';       // full or relative path to show uploaded images from
 $conf['settings']['cache.templates'] = 'true';                  // true recommended, caching template files helps web pages render faster
@@ -110,7 +110,7 @@ $conf['settings']['uploads']['reservation.attachment.extensions'] = 'txt,jpg,gif
  */
 $conf['settings']['database']['type'] = 'mysql';
 $conf['settings']['database']['user'] = 'booked_user';        // database user with permission to the booked database
-$conf['settings']['database']['password'] = '';
+$conf['settings']['database']['password'] = 'password';
 $conf['settings']['database']['hostspec'] = '127.0.0.1';        // ip, dns or named pipe
 $conf['settings']['database']['name'] = 'booked';
 /**

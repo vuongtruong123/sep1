@@ -1,18 +1,30 @@
 <?php
+<<<<<<< HEAD
 /* Smarty version 3.1.30, created on 2019-07-17 04:52:36
+=======
+/* Smarty version 3.1.30, created on 2019-07-17 04:40:33
+>>>>>>> 2bb7d987d09843d169e445b045b45eb5c1999198
   from "C:\xampp\htdocs\sep1\tpl\javascript-includes.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
+<<<<<<< HEAD
   'unifunc' => 'content_5d2e8d748681f9_41697831',
+=======
+  'unifunc' => 'content_5d2e8aa1699286_77649701',
+>>>>>>> 2bb7d987d09843d169e445b045b45eb5c1999198
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ebcc12e8e24f60043a8438cc41f93c31bb8f3b1e' => 
     array (
       0 => 'C:\\xampp\\htdocs\\sep1\\tpl\\javascript-includes.tpl',
+<<<<<<< HEAD
       1 => 1563162001,
+=======
+      1 => 1563302068,
+>>>>>>> 2bb7d987d09843d169e445b045b45eb5c1999198
       2 => 'file',
     ),
   ),
@@ -20,7 +32,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
+<<<<<<< HEAD
 function content_5d2e8d748681f9_41697831 (Smarty_Internal_Template $_smarty_tpl) {
+=======
+function content_5d2e8aa1699286_77649701 (Smarty_Internal_Template $_smarty_tpl) {
+>>>>>>> 2bb7d987d09843d169e445b045b45eb5c1999198
 ?>
 
 <?php if ($_smarty_tpl->tpl_vars['UseLocalJquery']->value) {?>

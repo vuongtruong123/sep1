@@ -9,7 +9,11 @@ $conf['settings']['admin.email.name'] = 'Booked Administrator';
 $conf['settings']['default.page.size'] = '50';
 $conf['settings']['enable.email'] = 'true';
 $conf['settings']['default.language'] = 'en_us';
+<<<<<<< HEAD
 $conf['settings']['script.url'] = 'http://localhost:8080/sep1/Web';
+=======
+$conf['settings']['script.url'] = 'http:';
+>>>>>>> 2bb7d987d09843d169e445b045b45eb5c1999198
 $conf['settings']['image.upload.directory'] = 'Web/uploads/images';
 $conf['settings']['image.upload.url'] = 'uploads/images';
 $conf['settings']['cache.templates'] = 'true';
@@ -61,12 +65,12 @@ $conf['settings']['reservation.notify']['group.admin.add'] = 'false';
 $conf['settings']['reservation.notify']['group.admin.update'] = 'false';
 $conf['settings']['reservation.notify']['group.admin.delete'] = 'false';
 $conf['settings']['reservation.notify']['group.admin.approval'] = 'false';
-$conf['settings']['uploads']['enable.reservation.attachments'] = 'false';
+$conf['settings']['uploads']['enable.reservation.attachments'] = 'true';
 $conf['settings']['uploads']['reservation.attachment.path'] = 'uploads/reservation';
 $conf['settings']['uploads']['reservation.attachment.extensions'] = 'txt,jpg,gif,png,doc,docx,pdf,xls,xlsx,ppt,pptx,csv';
 $conf['settings']['database']['type'] = 'mysql';
 $conf['settings']['database']['user'] = 'booked_user';
-$conf['settings']['database']['password'] = '';
+$conf['settings']['database']['password'] = 'password';
 $conf['settings']['database']['hostspec'] = '127.0.0.1';
 $conf['settings']['database']['name'] = 'booked';
 $conf['settings']['phpmailer']['mailer'] = 'mail';
