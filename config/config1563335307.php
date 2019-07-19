@@ -1,27 +1,21 @@
 <?php
 /**
 Copyright 2011-2019 Nick Korbel
-
 This file is part of Booked Scheduler.
-
 Booked Scheduler is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
-
 Booked Scheduler is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
-
 You should have received a copy of the GNU General Public License
 along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT);
 //ini_set('display_errors', 1);
 //ini_set('display_startup_errors', 1);
-
 /**
  * Application configuration
  */
@@ -49,12 +43,10 @@ $conf['settings']['disable.password.reset'] = 'false'; 	      	// if the passwor
 $conf['settings']['home.url'] = 'view-schedule.php'; 	      					// the url to open when the logo is clicked
 $conf['settings']['logout.url'] = 'view-schedule.php'; 	      					// the url to be directed to after logging out
 $conf['settings']['default.homepage'] = '1'; 	      			// the default homepage to use when new users register (1 = Dashboard, 2 = Schedule, 3 = My Calendar, 4 = Resource Calendar)
-
 $conf['settings']['schedule']['use.per.user.colors'] = 'false'; 		// color reservations by user
 $conf['settings']['schedule']['show.inaccessible.resources'] = 'true';  // whether or not resources that are inaccessible to the user are visible
 $conf['settings']['schedule']['reservation.label'] = '{name}';    		// format for what to display on the reservation slot label.  Available properties are: {name}, {title}, {description}, {email}, {phone}, {organization}, {position}, {startdate}, {enddate} {resourcename} {participants} {invitees} {reservationAttributes}. Custom attributes can be added using att with the attribute id. For example {att1}
 $conf['settings']['schedule']['hide.blocked.periods'] = 'false';    	// if blocked periods should be hidden or shown
-
 /**
  * ical integration configuration
  */
@@ -190,7 +182,6 @@ $conf['settings']['security']['security.content-security-policy'] = ""; // Requi
  * Google Analytics settings
  */
 $conf['settings']['google.analytics']['tracking.id'] = ''; // if set, Google Analytics tracking code will be added to every page in Booked
-
 $conf['settings']['authentication']['allow.facebook.login'] = 'true';
 $conf['settings']['authentication']['allow.google.login'] = 'true';
 $conf['settings']['authentication']['required.email.domains'] = '';

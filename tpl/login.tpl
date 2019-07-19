@@ -145,7 +145,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 						<select {formname key=LANGUAGE} class="form-control input-sm" id="languageDropDown">
 							{object_html_options options=$Languages key='GetLanguageCode' label='GetDisplayName' selected=$SelectedLanguage}
 						</select>
-					</div>
+					</div> 
 				</div>
 			</div>
 
