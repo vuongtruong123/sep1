@@ -1,5 +1,6 @@
 <?php
 error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT);
+
 $conf['settings']['app.title'] = 'Booked Scheduler';
 $conf['settings']['default.timezone'] = 'America/New_York';
 $conf['settings']['allow.self.registration'] = 'true';
@@ -21,7 +22,7 @@ $conf['settings']['inactivity.timeout'] = '30';
 $conf['settings']['name.format'] = '{first} {last}';
 $conf['settings']['css.extension.file'] = '';
 $conf['settings']['disable.password.reset'] = 'false';
-$conf['settings']['home.url'] = 'view-schedule.php';
+$conf['settings']['home.url'] = 'dashboard.php';
 $conf['settings']['logout.url'] = 'view-schedule.php';
 $conf['settings']['default.homepage'] = '1';
 $conf['settings']['schedule']['use.per.user.colors'] = 'false';
