@@ -147,7 +147,7 @@ class Queries
 			'INSERT INTO
         reservation_series (date_created, title, description, allow_participation, allow_anon_participation, repeat_type, repeat_options, type_id, status_id, owner_id, terms_date_accepted, last_action_by)
 		VALUES (@dateCreated, @title, @description, @allow_participation, false, @repeatType, @repeatOptions, @typeid, @statusid, @userid, @terms_date_accepted, @last_action_by)';
-
+		
 	const ADD_RESERVATION_GUEST =
 			'INSERT INTO reservation_guests (reservation_instance_id, email, reservation_user_level)
 			VALUES (@reservationid, @email, @levelid)';

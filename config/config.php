@@ -1,7 +1,11 @@
 <?php
 error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT);
 
+<<<<<<< HEAD
 $conf['settings']['app.title'] = 'Booked Scheduler';
+=======
+$conf['settings']['app.title'] = 'VLU - Mượn phòng';
+>>>>>>> b9f11ed51c84816daf9f98af70cc7c03d0aad346
 $conf['settings']['default.timezone'] = 'America/New_York';
 $conf['settings']['allow.self.registration'] = 'true';
 $conf['settings']['admin.email'] = 'admin@example.com';
@@ -43,7 +47,7 @@ $conf['settings']['reservation']['prevent.participation'] = 'false';
 $conf['settings']['reservation']['prevent.recurrence'] = 'false';
 $conf['settings']['reservation']['enable.reminders'] = 'true';
 $conf['settings']['reservation']['allow.guest.participation'] = 'false';
-$conf['settings']['reservation']['allow.wait.list'] = 'false';
+$conf['settings']['reservation']['allow.wait.list'] = 'true';
 $conf['settings']['reservation']['checkin.minutes.prior'] = '5';
 $conf['settings']['reservation']['default.start.reminder'] = '';
 $conf['settings']['reservation']['default.end.reminder'] = '';
@@ -66,7 +70,7 @@ $conf['settings']['uploads']['reservation.attachment.path'] = 'uploads/reservati
 $conf['settings']['uploads']['reservation.attachment.extensions'] = 'txt,jpg,gif,png,doc,docx,pdf,xls,xlsx,ppt,pptx,csv';
 $conf['settings']['database']['type'] = 'mysql';
 $conf['settings']['database']['user'] = 'booked_user';
-$conf['settings']['database']['password'] = '';
+$conf['settings']['database']['password'] = 'password';
 $conf['settings']['database']['hostspec'] = '127.0.0.1';
 $conf['settings']['database']['name'] = 'booked';
 $conf['settings']['phpmailer']['mailer'] = 'mail';
