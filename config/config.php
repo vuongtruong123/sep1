@@ -1,6 +1,7 @@
 <?php
 error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT);
-$conf['settings']['app.title'] = 'Booked Scheduler';
+
+$conf['settings']['app.title'] = 'VLU - Mượn phòng';
 $conf['settings']['default.timezone'] = 'America/New_York';
 $conf['settings']['allow.self.registration'] = 'true';
 $conf['settings']['admin.email'] = 'admin@example.com';
@@ -42,7 +43,7 @@ $conf['settings']['reservation']['prevent.participation'] = 'false';
 $conf['settings']['reservation']['prevent.recurrence'] = 'false';
 $conf['settings']['reservation']['enable.reminders'] = 'true';
 $conf['settings']['reservation']['allow.guest.participation'] = 'false';
-$conf['settings']['reservation']['allow.wait.list'] = 'false';
+$conf['settings']['reservation']['allow.wait.list'] = 'true';
 $conf['settings']['reservation']['checkin.minutes.prior'] = '5';
 $conf['settings']['reservation']['default.start.reminder'] = '';
 $conf['settings']['reservation']['default.end.reminder'] = '';
