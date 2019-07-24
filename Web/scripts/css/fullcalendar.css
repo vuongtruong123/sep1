@@ -396,7 +396,7 @@ hr.fc-divider {
 }
 
 .fc td.fc-today {
-	border-style: double; /* overcome neighboring borders */
+	border-style: none !; /* overcome neighboring borders */
 }
 
 

@@ -218,7 +218,7 @@ class en_us extends Language
 		$strings['CancelParticipation'] = 'Hủy những người sẽ tham gia họp';
 		$strings['Attending'] = 'Attending';
 		$strings['QuotaConfiguration'] = 'Trên %s cho %s người dùng trong %s được giới hạn %s %s mỗi %s';
-		$strings['QuotaEnforcement'] = 'Cưỡng chế %s %s';
+		$strings['QuotaEnforcement'] = 'Bắt buộc %s %s';
 		$strings['reservations'] = 'đặt phòng';
 		$strings['reservation'] = 'đặt phòng';
 		$strings['ChangeCalendar'] = 'Đổi Lịch';
