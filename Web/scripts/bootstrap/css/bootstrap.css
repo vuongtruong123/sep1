@@ -3386,7 +3386,18 @@ input[type="button"].btn-block {
   opacity: 1;
 }
 .collapse {
-  display: none;
+
+line-height: 120px;
+font-family: Arial, Tahoma, Verdana, sans-serif;
+font-size: 17px;
+padding-top: 10px;
+padding-left: 20px;
+
+
+  
+  background: #FFFFFF;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #FFFFFF));
+
 }
 .collapse.in {
   display: block;
@@ -4397,11 +4408,17 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  background-color: #FFFFFF;
+
+
 }
 .navbar-default .navbar-brand {
-  color: #777;
+  
+
+  padding-top: 8px;
+ 
+  height: 70px;
+
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {

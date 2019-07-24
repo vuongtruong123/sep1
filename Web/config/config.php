@@ -58,7 +58,7 @@ $conf['settings']['schedule']['hide.blocked.periods'] = 'false';    	// if block
 /**
  * ical integration configuration
  */
-$conf['settings']['ics']['subscription.key'] = '';              // must be set to allow webcal subscriptions
+$conf['settings']['ics']['subscription.key'] = 'e3a95c2adce35991b9d6';              // must be set to allow webcal subscriptions
 $conf['settings']['ics']['future.days'] = 30;
 $conf['settings']['ics']['past.days'] = 0;
 /**
