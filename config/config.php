@@ -1,7 +1,5 @@
 <?php
 error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT);
-
-
 $conf['settings']['app.title'] = 'Booked Scheduler';
 
 $conf['settings']['app.title'] = 'VLU - Mượn phòng';
@@ -25,8 +23,13 @@ $conf['settings']['registration.notify.admin'] = 'false';
 $conf['settings']['inactivity.timeout'] = '30';
 $conf['settings']['name.format'] = '{first} {last}';
 $conf['settings']['css.extension.file'] = '';
+
+$conf['settings']['disable.password.reset'] = 'true';
+$conf['settings']['home.url'] = 'view-schedule.php';
+
 $conf['settings']['disable.password.reset'] = 'false';
 $conf['settings']['home.url'] = 'dashboard.php';
+
 $conf['settings']['logout.url'] = 'view-schedule.php';
 $conf['settings']['default.homepage'] = '1';
 $conf['settings']['schedule']['use.per.user.colors'] = 'false';
@@ -53,18 +56,18 @@ $conf['settings']['reservation']['default.start.reminder'] = '';
 $conf['settings']['reservation']['default.end.reminder'] = '';
 $conf['settings']['reservation']['title.required'] = 'false';
 $conf['settings']['reservation']['description.required'] = 'false';
-$conf['settings']['reservation.notify']['resource.admin.add'] = 'false';
-$conf['settings']['reservation.notify']['resource.admin.update'] = 'false';
-$conf['settings']['reservation.notify']['resource.admin.delete'] = 'false';
-$conf['settings']['reservation.notify']['resource.admin.approval'] = 'false';
-$conf['settings']['reservation.notify']['application.admin.add'] = 'false';
-$conf['settings']['reservation.notify']['application.admin.update'] = 'false';
-$conf['settings']['reservation.notify']['application.admin.delete'] = 'false';
-$conf['settings']['reservation.notify']['application.admin.approval'] = 'false';
-$conf['settings']['reservation.notify']['group.admin.add'] = 'false';
-$conf['settings']['reservation.notify']['group.admin.update'] = 'false';
-$conf['settings']['reservation.notify']['group.admin.delete'] = 'false';
-$conf['settings']['reservation.notify']['group.admin.approval'] = 'false';
+$conf['settings']['reservation.notify']['resource.admin.add'] = 'true';
+$conf['settings']['reservation.notify']['resource.admin.update'] = 'true';
+$conf['settings']['reservation.notify']['resource.admin.delete'] = 'true';
+$conf['settings']['reservation.notify']['resource.admin.approval'] = 'true';
+$conf['settings']['reservation.notify']['application.admin.add'] = 'true';
+$conf['settings']['reservation.notify']['application.admin.update'] = 'true';
+$conf['settings']['reservation.notify']['application.admin.delete'] = 'true';
+$conf['settings']['reservation.notify']['application.admin.approval'] = 'true';
+$conf['settings']['reservation.notify']['group.admin.add'] = 'true';
+$conf['settings']['reservation.notify']['group.admin.update'] = 'true';
+$conf['settings']['reservation.notify']['group.admin.delete'] = 'true';
+$conf['settings']['reservation.notify']['group.admin.approval'] = 'true';
 $conf['settings']['uploads']['enable.reservation.attachments'] = 'true';
 $conf['settings']['uploads']['reservation.attachment.path'] = 'uploads/reservation';
 $conf['settings']['uploads']['reservation.attachment.extensions'] = 'txt,jpg,gif,png,doc,docx,pdf,xls,xlsx,ppt,pptx,csv';
@@ -90,7 +93,7 @@ $conf['settings']['plugins']['PreReservation'] = '';
 $conf['settings']['plugins']['PostReservation'] = '';
 $conf['settings']['install.password'] = '';
 $conf['settings']['pages']['enable.configuration'] = 'true';
-$conf['settings']['api']['enabled'] = 'false';
+$conf['settings']['api']['enabled'] = 'true';
 $conf['settings']['api']['allow.self.registration'] = 'false';
 $conf['settings']['recaptcha']['enabled'] = 'false';
 $conf['settings']['recaptcha']['public.key'] = '';
@@ -114,8 +117,8 @@ $conf['settings']['security']['security.x-xss'] = '1; mode=block';
 $conf['settings']['security']['security.x-content-type'] = 'nosniff';
 $conf['settings']['security']['security.content-security-policy'] = '';
 $conf['settings']['google.analytics']['tracking.id'] = '';
-$conf['settings']['authentication']['allow.facebook.login'] = 'true';
-$conf['settings']['authentication']['allow.google.login'] = 'true';
+$conf['settings']['authentication']['allow.facebook.login'] = 'false';
+$conf['settings']['authentication']['allow.google.login'] = 'false';
 $conf['settings']['authentication']['required.email.domains'] = '';
 $conf['settings']['authentication']['hide.booked.login.prompt'] = 'false';
 $conf['settings']['authentication']['captcha.on.login'] = 'false';
