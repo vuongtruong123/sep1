@@ -36,6 +36,7 @@
   .navbar-nav > li > a {
     padding-top: 10px;
     padding-bottom: 10px;
+    
   }
   .collapse.in {
     display: block !important;
@@ -97,8 +98,8 @@ a:hover {
   background: -moz-linear-gradient(center bottom, #EEEEEE 0%, #EEEEEE 100%);
   background: -o-linear-gradient(#EEEEEE, #EEEEEE);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEEEEE', endColorstr='#656460', GradientType=0);
-  height: 250px;
-  min-height: 250px;
+  height: 200px;
+  min-height: 200px;
   margin-bottom: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -571,7 +572,7 @@ span.searchclear-label {
   top: 22px;
 }
 img.logo {
-  max-height: 50px;
+  max-height: 60px;
 }
 .switch {
   position: relative;

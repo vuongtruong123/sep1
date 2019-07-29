@@ -3386,12 +3386,10 @@ input[type="button"].btn-block {
   opacity: 1;
 }
 .collapse {
-
 line-height: 120px;
 font-family: Arial, Tahoma, Verdana, sans-serif;
-font-size: 17px;
-padding-top: 10px;
-padding-left: 20px;
+font-size: 18px;
+padding-top: 11px;
 
 
   
@@ -3878,7 +3876,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   z-index: 2;
 }
 .input-group-btn:first-child > .btn,
-.input-group-btn:first-child > .btn-group {
+.input-group-btn:first-child > .btn-group   {
   margin-right: -1px;
 }
 .input-group-btn:last-child > .btn,
@@ -4241,6 +4239,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 20px;
+
 }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {

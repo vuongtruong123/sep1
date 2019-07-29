@@ -1,9 +1,7 @@
 <?php
 error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT);
-$conf['settings']['app.title'] = 'Booked Scheduler';
 
-$conf['settings']['app.title'] = 'VLU - Mượn phòng';
-
+$conf['settings']['app.title'] = 'MEETING ROOM BOOKING';
 $conf['settings']['default.timezone'] = 'America/New_York';
 $conf['settings']['allow.self.registration'] = 'true';
 $conf['settings']['admin.email'] = 'admin@example.com';
@@ -23,11 +21,16 @@ $conf['settings']['registration.notify.admin'] = 'false';
 $conf['settings']['inactivity.timeout'] = '30';
 $conf['settings']['name.format'] = '{first} {last}';
 $conf['settings']['css.extension.file'] = '';
+<<<<<<< HEAD
 
 $conf['settings']['disable.password.reset'] = 'true';
 $conf['settings']['home.url'] = 'view-schedule.php';
 
 
+=======
+$conf['settings']['disable.password.reset'] = 'false';
+$conf['settings']['home.url'] = 'dashboard.php';
+>>>>>>> b951d7da1c60b153254df3efec6c6475c092bb55
 $conf['settings']['logout.url'] = 'view-schedule.php';
 $conf['settings']['default.homepage'] = '1';
 $conf['settings']['schedule']['use.per.user.colors'] = 'false';

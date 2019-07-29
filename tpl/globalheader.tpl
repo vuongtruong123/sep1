@@ -291,7 +291,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                                 </ul>
                             </li>
                         {/if}
-                        <!-- {if $CanViewReports}
+                        {if $CanViewReports}
                             <li class="dropdown" id="navReportsDropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">{translate key="Reports"} <b
                                             class="caret"></b></a>
@@ -307,7 +307,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                                     </li>
                                 </ul>
                             </li>
-                        {/if} -->
+                        {/if}
                     {/if}
 
                 </ul>
