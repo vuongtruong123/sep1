@@ -60,11 +60,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 							<input {formname key=BLACKOUT_APPLY_TO_SCHEDULE} type="checkbox" id="allResources"/>
 							<label for="allResources" style="">{translate key=AllResourcesOn} </label>
 						</div>
-                        <label for="addScheduleId" class="no-show">{translate key=Schedule} </label>
-                        <select {formname key=SCHEDULE_ID} id="addScheduleId" class="form-control" disabled="disabled"
-														   title="{translate key=Schedule}">
-							{object_html_options options=$Schedules key='GetId' label="GetName" selected=$ScheduleId}
-						</select>
+                        
 					{/if}
 				</div>
 				<div class="col-xs-12">

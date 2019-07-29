@@ -11,7 +11,7 @@ $conf['settings']['admin.email.name'] = 'Booked Administrator';
 $conf['settings']['default.page.size'] = '50';
 $conf['settings']['enable.email'] = 'true';
 $conf['settings']['default.language'] = 'en_us';
-$conf['settings']['script.url'] = 'http://localhost:8080/sep1/Web';
+$conf['settings']['script.url'] = 'http:';
 $conf['settings']['image.upload.directory'] = 'Web/uploads/images';
 $conf['settings']['image.upload.url'] = 'uploads/images';
 $conf['settings']['cache.templates'] = 'true';
@@ -27,8 +27,6 @@ $conf['settings']['css.extension.file'] = '';
 $conf['settings']['disable.password.reset'] = 'true';
 $conf['settings']['home.url'] = 'view-schedule.php';
 
-$conf['settings']['disable.password.reset'] = 'false';
-$conf['settings']['home.url'] = 'dashboard.php';
 
 $conf['settings']['logout.url'] = 'view-schedule.php';
 $conf['settings']['default.homepage'] = '1';
@@ -73,7 +71,7 @@ $conf['settings']['uploads']['reservation.attachment.path'] = 'uploads/reservati
 $conf['settings']['uploads']['reservation.attachment.extensions'] = 'txt,jpg,gif,png,doc,docx,pdf,xls,xlsx,ppt,pptx,csv';
 $conf['settings']['database']['type'] = 'mysql';
 $conf['settings']['database']['user'] = 'booked_user';
-$conf['settings']['database']['password'] = '';
+$conf['settings']['database']['password'] = 'password';
 $conf['settings']['database']['hostspec'] = '127.0.0.1';
 $conf['settings']['database']['name'] = 'booked';
 $conf['settings']['phpmailer']['mailer'] = 'mail';

@@ -55,7 +55,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 		<tr>
 			<th>{sort_column key=AccessoryName field=ColumnNames::ACCESSORY_NAME}</th>
 			<th>{sort_column key=QuantityAvailable field=ColumnNames::ACCESSORY_QUANTITY}</th>
-			<th>{translate key='Resources'}</th>
+			
 			<th class="action">{translate key='Actions'}</th>
 		</tr>
 		</thead>
@@ -65,10 +65,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 			<tr class="{$rowCss}" data-accessory-id="{$accessory->Id}">
 				<td>{$accessory->Name}</td>
 				<td>{$accessory->QuantityAvailable|default:'&infin;'}</td>
-				<td>
-					<a href="#"
-					   class="update resources">{if $accessory->AssociatedResources == 0}{translate key=All}{else}{$accessory->AssociatedResources}{/if}</a>
-				</td>
+				
 				<td class="action">
 					<a href="#" class="update edit"><span class="no-show"></span>
                         <span class="no-show">{translate key=Edit}</span>
