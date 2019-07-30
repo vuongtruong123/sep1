@@ -311,7 +311,7 @@ class en_us extends Language
 		$strings['DeleteAccessoryWarning'] = 'Xóa phụ kiện này sẽ xóa nó khỏi tất cả các đặt phòng.';
 		$strings['AddAccessory'] = 'Thêm phụ kiện';
 		$strings['AddBlackout'] = 'Add Blackout';
-		$strings['AllResourcesOn'] = 'Tất cả tài nguyên trên';
+		$strings['AllResourcesOn'] = 'Tất cả tài nguyên';
 		$strings['Reason'] = 'Lý do';
 		$strings['BlackoutShowMe'] = 'Hiện lịch họp bị trùng giờ';
 		$strings['BlackoutDeleteConflicts'] = 'Xóa lịch họp bị trùng giờ';

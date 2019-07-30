@@ -55,7 +55,11 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 		<tr>
 			<th>{sort_column key=AccessoryName field=ColumnNames::ACCESSORY_NAME}</th>
 			<th>{sort_column key=QuantityAvailable field=ColumnNames::ACCESSORY_QUANTITY}</th>
+<<<<<<< HEAD
 			<!-- <th>{translate key='Resources'}</th> -->
+=======
+			
+>>>>>>> f60894ba83cea1590867118ec074da8ecd2e6aab
 			<th class="action">{translate key='Actions'}</th>
 		</tr>
 		</thead>
@@ -64,6 +68,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 			{cycle values='row0,row1' assign=rowCss}
 			<tr class="{$rowCss}" data-accessory-id="{$accessory->Id}">
 				<td>{$accessory->Name}</td>
+<<<<<<< HEAD
 				<td>{$accessory->QuantityAvailable|default:'&infin;'}</td> 
 					<!-- <a href="#"
 					   class="update resources">{if $accessory->AssociatedResources == 0}{translate key=All}{else}{$accessory->AssociatedResources}{/if}</a> -->
@@ -76,6 +81,11 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                         <span class="fa fa-trash icon remove"></span></a>
 				</td>
 				<!-- <td class="action">
+=======
+				<td>{$accessory->QuantityAvailable|default:'&infin;'}</td>
+				
+				<td class="action">
+>>>>>>> f60894ba83cea1590867118ec074da8ecd2e6aab
 					<a href="#" class="update edit"><span class="no-show"></span>
                         <span class="no-show">{translate key=Edit}</span>
                         <span class="fa fa-pencil-square-o icon"></a> |

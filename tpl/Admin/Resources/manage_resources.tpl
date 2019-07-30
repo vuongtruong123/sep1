@@ -113,9 +113,11 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 						<option value="{ResourceStatus::HIDDEN}">{translate key=Hidden}</option>
 					</select>
                     <label for="resourceReasonIdFilter" class="no-show">{translate key=Reason}</label>
-                    <select id="resourceReasonIdFilter" style="width:auto;" class="form-control inline" {formname key=RESOURCE_STATUS_REASON_ID}>
+                    <!-- 
+                     <select id="resourceReasonIdFilter" style="width:auto;" class="form-control inline" {formname key=RESOURCE_STATUS_REASON_ID}>
 						<option value="">-</option>
-					</select>
+					</select> -->
+					
 				</div>
 				<div class="form-group {$groupClass}">
                     <label for="filterCapacity" class="no-show">{translate key=MinimumCapacity}</label>
@@ -244,29 +246,8 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 								{/if}
 							</div>
 
-							<div>
-								{translate key='Schedule'}
-								<span class="propertyValue scheduleName"
-									  data-type="select" data-pk="{$id}" data-value="{$resource->GetScheduleId()}"
-									  data-name="{FormKeys::SCHEDULE_ID}">{$Schedules[$resource->GetScheduleId()]}</span>
-								<a class="update changeScheduleButton" href="#">{translate key='Move'}</a>
-							</div>
-							<div>
-								{translate key='ResourceType'}
-								<span class="propertyValue resourceTypeName"
-									  data-type="select" data-pk="{$id}" data-value="{$resource->GetResourceTypeId()}"
-									  data-name="{FormKeys::RESOURCE_TYPE_ID}">
-									{if $resource->HasResourceType()}
-										{$ResourceTypes[$resource->GetResourceTypeId()]->Name()}
-									{else}
-										{translate key='NoResourceTypeLabel'}
-									{/if}
-								</span>
-								<a class="update changeResourceType" href="#">
-                                    <span class="no-show">{translate key=ResourceType}</span>
-                                    <span class="fa fa-pencil-square-o"></span>
-                                </a>
-							</div>
+							
+							
 							<div>
 								{translate key=SortOrder}
 								<span class="propertyValue sortOrderValue"
@@ -364,10 +345,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                                         <span class="fa fa-pencil-square-o"></span></a>
 								{/if}
 							</div>
-							<div>
-								<a href="{$smarty.server.SCRIPT_NAME}?action={ManageResourcesActions::ActionPrintQR}&rid={$id}"
-								   target="_blank">{translate key=PrintQRCode} <i class="fa fa-qrcode"></i></a>
-							</div>
+							
 						</div>
 					</div>
 
@@ -423,8 +401,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 
 						<div class="col-sm-6 col-xs-12">
 							<h5>{translate key='Permissions'}</h5>
-							<a href="#" class="update changeUserPermission">{translate key=Users}</a> |
-							<a href="#" class="update changeGroupPermissions">{translate key=Groups}</a>
+							<a href="#" class="update changeUserPermission">{translate key=Users}</a>
 						</div>
 
 						<div class="col-sm-6 col-xs-12">
