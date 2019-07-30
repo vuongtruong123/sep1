@@ -12572,7 +12572,7 @@ Calendar.rtlDefaults = { // right-to-left defaults
 		prevYear: 'right-double-arrow',
 		nextYear: 'left-double-arrow'
 	},
-	themeButtonIcons: {
+	themeButtonIcons: {	
 		prev: 'circle-triangle-e',
 		next: 'circle-triangle-w',
 		nextYear: 'seek-prev',

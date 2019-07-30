@@ -162,9 +162,9 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                                                        href="#"
                                                        class="update changePermissions">{translate key="Permissions"}</a>
                             </li>
-                            <li role="presentation"><a role="menuitem"
+                            <!-- <li role="presentation"><a role="menuitem"
                                                        href="#"
-                                                       class="update changeGroups">{translate key="Groups"}</a>
+                                                       class="update changeGroups">{translate key="Groups"}</a> -->
                             </li>
                             <li role="presentation"><a role="menuitem"
                                                        href="#"

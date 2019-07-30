@@ -1,21 +1,28 @@
-{*
-Copyright 2011-2019 Nick Korbel
+<?php
+/* Smarty version 3.1.30, created on 2019-07-30 12:16:17
+  from "C:\xampp\htdocs\sep1\tpl\globalfooter.tpl" */
 
-This file is part of Booked Scheduler.
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_5d4018f1608678_90688335',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'e49b3819aa91fac6fd13267634e9d6e6d219e237' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\sep1\\tpl\\globalfooter.tpl',
+      1 => 1564373882,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5d4018f1608678_90688335 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 
-Booked Scheduler is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-Booked Scheduler is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
-*}
 </div><!-- close main-->
 
 <!-- <footer class="footer navbar" >
@@ -83,25 +90,31 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 </footer>
 <!-- Footer -->
 
-	<script type="text/javascript">
+	<?php echo '<script'; ?>
+ type="text/javascript">
 		init();
 		$.blockUI.defaults.css.border = 'none';
 		$.blockUI.defaults.css.top = '25%';
 
-	</script>
+	<?php echo '</script'; ?>
+>
 
-	{if !empty($GoogleAnalyticsTrackingId)}
-		{literal}
-			<script>
+	<?php if (!empty($_smarty_tpl->tpl_vars['GoogleAnalyticsTrackingId']->value)) {?>
+		
+			<?php echo '<script'; ?>
+>
 			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		  {/literal}
-			  ga('create', '{$GoogleAnalyticsTrackingId}', 'auto');
+		  
+			  ga('create', '<?php echo $_smarty_tpl->tpl_vars['GoogleAnalyticsTrackingId']->value;?>
+', 'auto');
 			  ga('send', 'pageview');
-			</script>
-	{/if}
+			<?php echo '</script'; ?>
+>
+	<?php }?>
 
 	</body>
-</html>
+</html><?php }
+}

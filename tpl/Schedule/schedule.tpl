@@ -144,15 +144,9 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                 {/if}
 
                 <div id="schedule-title" class="schedule_title {$titleWidth} col-xs-12">
-                    <label for="schedules" class="no-show">Schedule</label>
-                    <select id="schedules" class="form-control" style="width:auto;">
-                        {foreach from=$Schedules item=schedule}
-                            <option value="{$schedule->GetId()}"
-                                    {if $schedule->GetId() == $ScheduleId}selected="selected"{/if}>{$schedule->GetName()}</option>
-                        {/foreach}
-                    </select>
+                    
                     <a href="#" id="calendar_toggle" title="{translate key=ShowHideNavigation}">
-                        <span class="glyphicon glyphicon-calendar"></span>
+                        Xem Lịch <span class="glyphicon glyphicon-calendar"></span>
                         <span class="no-show">{translate key=ShowHideNavigation}</span>
                     </a>
                     <div id="individualDates">
@@ -297,14 +291,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                                            value="{$MaxParticipantsFilter}"/>
                                 </div>
 
-                                <div class="form-group col-xs-12">
-                                    <label for="resourceType">{translate key=ResourceType}</label>
-                                    <select id="resourceType" {formname key=RESOURCE_TYPE_ID} {formname key=RESOURCE_TYPE_ID}
-                                            class="form-control input-sm">
-                                        <option value="">- {translate key=All} -</option>
-                                        {object_html_options options=$ResourceTypes label='Name' key='Id' selected=$ResourceTypeIdFilter}
-                                    </select>
-                                </div>
+                                
 
                                 {foreach from=$ResourceAttributes item=attribute}
                                     {control type="AttributeControl" attribute=$attribute align='vertical' searchmode=true namePrefix='r' inputClass="input-sm" class="customAttribute col-xs-12"}
