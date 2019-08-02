@@ -31,10 +31,10 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 				<i class="fa fa-user"></i>
 				{translate key='Users'}
 			</button>
-			<button id="promptForGroupParticipants" type="button" class="btn btn-link inline">
+			<!-- <button id="promptForGroupParticipants" type="button" class="btn btn-link inline">
 				<i class="fa fa-users"></i>
 				{translate key='Groups'}
-			</button>
+			</button> -->
 		</div>
 
 		<div id="participantList">
@@ -54,10 +54,10 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 				<i class="fa fa-user"></i>
 				{translate key='Users'}
 			</button>
-			<button id="promptForGroupInvitees" type="button" class="btn btn-link inline">
+			<!-- <button id="promptForGroupInvitees" type="button" class="btn btn-link inline">
 				<i class="fa fa-users"></i>
 				{translate key='Groups'}
-			</button>
+			</button> -->
 			{if $AllowGuestParticipation}
 				<button id="promptForGuests" type="button" class="btn btn-link inline">
 					<i class="fa fa-user-plus"></i>
