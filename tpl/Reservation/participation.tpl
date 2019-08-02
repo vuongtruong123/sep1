@@ -16,9 +16,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 *}
-<<<<<<< HEAD
-        
-=======
+
 <div id="reservationParticipation">
 	<div class="row">
 		<label for="participantAutocomplete">{translate key="ParticipantList"}</label>
@@ -39,7 +37,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 				{translate key='Groups'}
 			</button> -->
 		</div>
->>>>>>> c84b9508a5f97fa44707537087c383a78ffcdadc
+
 
 	<div style="margin: 2px;" class="row">
 		<label for="inviteeAutocomplete">{translate key="InvitationList"}</label>
