@@ -16,7 +16,30 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 *}
+<<<<<<< HEAD
         
+=======
+<div id="reservationParticipation">
+	<div class="row">
+		<label for="participantAutocomplete">{translate key="ParticipantList"}</label>
+        <span class="badge" id="participantBadge">0</span>
+        <br/>
+		<div class="participationText">
+			<span class="hidden-xs">{translate key=Add}</span>
+			<input type="text" id="participantAutocomplete" class="form-control inline-block user-search" placeholder="{translate key=NameOrEmail}"/>
+			<span class="hidden-xs">|</span>
+		</div>
+		<div class="participationButtons">
+			<button id="promptForParticipants" type="button" class="btn btn-link inline">
+				<i class="fa fa-user"></i>
+				{translate key='Users'}
+			</button>
+			<!-- <button id="promptForGroupParticipants" type="button" class="btn btn-link inline">
+				<i class="fa fa-users"></i>
+				{translate key='Groups'}
+			</button> -->
+		</div>
+>>>>>>> c84b9508a5f97fa44707537087c383a78ffcdadc
 
 	<div style="margin: 2px;" class="row">
 		<label for="inviteeAutocomplete">{translate key="InvitationList"}</label>
@@ -32,10 +55,10 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 				<i class="fa fa-user"></i>
 				{translate key='Users'}
 			</button>
-			<button id="promptForGroupInvitees" type="button" class="btn btn-link inline">
+			<!-- <button id="promptForGroupInvitees" type="button" class="btn btn-link inline">
 				<i class="fa fa-users"></i>
 				{translate key='Groups'}
-			</button>
+			</button> -->
 			{if $AllowGuestParticipation}
 				<button id="promptForGuests" type="button" class="btn btn-link inline">
 					<i class="fa fa-user-plus"></i>
