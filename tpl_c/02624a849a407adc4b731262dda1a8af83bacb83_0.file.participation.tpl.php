@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2019-08-02 04:39:13
+/* Smarty version 3.1.30, created on 2019-08-02 05:15:47
   from "C:\xampp\htdocs\sep1\tpl\Reservation\participation.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5d43a2517a4146_94130605',
+  'unifunc' => 'content_5d43aae3212b63_71548591',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '02624a849a407adc4b731262dda1a8af83bacb83' => 
     array (
       0 => 'C:\\xampp\\htdocs\\sep1\\tpl\\Reservation\\participation.tpl',
-      1 => 1564709304,
+      1 => 1564715723,
       2 => 'file',
     ),
   ),
@@ -20,39 +20,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d43a2517a4146_94130605 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d43aae3212b63_71548591 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
-<div id="reservationParticipation">
-	<div class="row">
-		<label for="participantAutocomplete"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>"ParticipantList"),$_smarty_tpl);?>
-</label>
-        <span class="badge" id="participantBadge">0</span>
-        <br/>
-		<div class="participationText">
-			<span class="hidden-xs"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'Add'),$_smarty_tpl);?>
-</span>
-			<input type="text" id="participantAutocomplete" class="form-control inline-block user-search" placeholder="<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'NameOrEmail'),$_smarty_tpl);?>
-"/>
-			<span class="hidden-xs">|</span>
-		</div>
-		<div class="participationButtons">
-			<button id="promptForParticipants" type="button" class="btn btn-link inline">
-				<i class="fa fa-user"></i>
-				<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'Users'),$_smarty_tpl);?>
+        
 
-			</button>
-			<button id="promptForGroupParticipants" type="button" class="btn btn-link inline">
-				<i class="fa fa-users"></i>
-				<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'Groups'),$_smarty_tpl);?>
-
-			</button>
-		</div>
-
-		<div id="participantList">
-		</div>
-	</div>
-	<div class="row">
+	<div style="margin: 2px;" class="row">
 		<label for="inviteeAutocomplete"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>"InvitationList"),$_smarty_tpl);?>
 </label>
         <span class="badge" id="inviteeBadge">0</span>
@@ -89,10 +62,7 @@ function content_5d43a2517a4146_94130605 (Smarty_Internal_Template $_smarty_tpl)
 
 		<div id="allowParticipation">
 			<div class="checkbox">
-				<input type="checkbox" <?php if ($_smarty_tpl->tpl_vars['AllowParticipantsToJoin']->value) {?>checked="checked"<?php }?> <?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['formname'][0][0]->GetFormName(array('key'=>'ALLOW_PARTICIPATION'),$_smarty_tpl);?>
- id="allowParticipationCheckbox">
-				<label for="allowParticipationCheckbox"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'AllowParticipantsToJoin'),$_smarty_tpl);?>
-</label>
+				
 			</div>
 		</div>
 
@@ -162,21 +132,40 @@ function content_5d43a2517a4146_94130605 (Smarty_Internal_Template $_smarty_tpl)
 		</div>
 
 	</div>
+	  <?php if ($_smarty_tpl->tpl_vars['UploadsEnabled']->value) {?>
+                <div class="row col-xs-12">
+                    <div class="col-xs-12 reservationAttachments">
+
+                        <label><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'AttachFile'),$_smarty_tpl);?>
+ <span class="note">(<?php echo $_smarty_tpl->tpl_vars['MaxUploadSize']->value;?>
+
+                                MB <?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'Maximum'),$_smarty_tpl);?>
+)</span>
+                        </label>
+
+                        <div id="reservationAttachments">
+                            <div class="attachment-item">
+                                <label for="reservationUploadFile">Reservation Upload File</label>
+                                <input type="file" <?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['formname'][0][0]->GetFormName(array('key'=>'RESERVATION_FILE','multi'=>true),$_smarty_tpl);?>
+
+                                       id="reservationUploadFile"/>
+                                <a class="add-attachment" href="#"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'Add'),$_smarty_tpl);?>
+ <i class="fa fa-plus-square"></i></a>
+                                <a class="remove-attachment" href="#"><span
+                                            class="no-show"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'Delete'),$_smarty_tpl);?>
+</span><i
+                                            class="fa fa-minus-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php }?>
+
 
 	<div class="modal fade" id="participantDialog" tabindex="-1" role="dialog" aria-labelledby="participantModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="participantModalLabel"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'AddParticipants'),$_smarty_tpl);?>
-</h4>
-				</div>
-				<div class="modal-body scrollable-modal-content">
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-primary" data-dismiss="modal"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'Done'),$_smarty_tpl);?>
-</button>
-				</div>
+			
 			</div>
 		</div>
 	</div>
