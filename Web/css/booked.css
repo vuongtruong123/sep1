@@ -119,8 +119,8 @@ a:hover {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: solid 1px #99988e;
-  background-color: #fcfcfc;
-  margin: 10px;
+/*  background-color: #fcfcfc;
+*/  margin: 10px;
 }
 .default-box h1 {
   color: #585754;

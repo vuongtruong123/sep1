@@ -244,27 +244,11 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 <!-- day ne
  -->
         {if !$HideSchedule}
-            {block name="legend"}
-                <div class="hidden-xs row col-sm-12 schedule-legend">
-                    <div class="center">
-                        <div class="legend reservable">{translate key=Reservable}</div>
-                        <div class="legend unreservable">{translate key=Unreservable}</div>
-                        <div class="legend reserved">{translate key=Reserved}</div>
-                        {if $LoggedIn}
-                            <div class="legend reserved mine">{translate key=MyReservation}</div>
-                            <!-- <div class="legend reserved participating">{translate key=Participant}</div> -->
-                        {/if}
-                        <div class="legend reserved pending">{translate key=Pending}</div>
-                        <div class="legend pasttime">{translate key=Past}</div>
-<!--                         <div class="legend restricted">{translate key=Restricted}</div>
- -->                    </div>
-                </div>
-            {/block}
-            <div class="row">
-                <div id="reservations-left" class="col-md-2 col-sm-12 default-box">
+
+        <div id="reservations-left" class="col-md-2 col-sm-12 default-box">
                     <div class="reservations-left-header">{translate key=ResourceFilter}
-                        <a href="#" class="pull-right toggle-sidebar" title="Hide Reservation Filter"><i
-                                    class="glyphicon glyphicon-remove"></i>
+                        <!-- <a href="#" class="pull-right toggle-sidebar" title="Hide Reservation Filter"><i
+                                    class="glyphicon glyphicon-remove"></i> -->
                             <span class="no-show">Hide Reservation Filter</span>
                         </a>
                     </div>
@@ -305,10 +289,10 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                                     <button type="submit" class="btn btn-success btn-sm"
                                             value="submit">{translate key=Filter}</button>
                                 </div>
-                                <div class="btn-clear">
+                                <!-- <div class="btn-clear">
                                     <button id="show_all_resources" type="button"
                                             class="btn btn-default btn-xs">{translate key=ClearFilter}</button>
-                                </div>
+                                </div> -->
 
                             </div>
 
@@ -321,14 +305,34 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                         </form>
                     </div>
                 </div>
+        
+            {block name="legend"}
+                <div class="hidden-xs row col-sm-12 schedule-legend">
+                    <div class="center">
+                        <div class="legend reservable">{translate key=Reservable}</div>
+                        <div class="legend unreservable">{translate key=Unreservable}</div>
+                        <div class="legend reserved">{translate key=Reserved}</div>
+                        {if $LoggedIn}
+                            <div class="legend reserved mine">{translate key=MyReservation}</div>
+                            <!-- <div class="legend reserved participating">{translate key=Participant}</div> -->
+                        {/if}
+                        <div class="legend reserved pending">{translate key=Pending}</div>
+                        <div class="legend pasttime">{translate key=Past}</div>
+<!--                         <div class="legend restricted">{translate key=Restricted}</div>
+ -->                    </div>
+                </div>
+            {/block}
+            <div class="row">
+                <!-- timkiem -->
+                
 
                 <div id="reservations" class="col-md-10 col-sm-12">
-                    <div>
+                    <!-- <div>
                         <a href="#" id="restore-sidebar" title="Show Reservation Filter"
                            class="hidden toggle-sidebar">{translate key=ResourceFilter} <i
                                     class="glyphicon glyphicon-filter"></i> <i
                                     class="glyphicon glyphicon-chevron-right"></i></a>
-                    </div>
+                    </div> -->
                     {block name="reservations"}
                         {include file="Schedule/schedule-reservations-grid.tpl" }
                     {/block}
