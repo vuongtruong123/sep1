@@ -1,7 +1,6 @@
 <?php
 error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT);
 
-
 $conf['settings']['app.title'] = 'Booked Scheduler';
 $conf['settings']['app.title'] = 'VLU - Mượn phòng';
 $conf['settings']['app.title'] = 'MEETING ROOM BOOKING';
