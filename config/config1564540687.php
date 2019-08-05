@@ -1,6 +1,9 @@
 <?php
 error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT);
 
+
+$conf['settings']['app.title'] = 'Booked Scheduler';
+$conf['settings']['app.title'] = 'VLU - Mượn phòng';
 $conf['settings']['app.title'] = 'MEETING ROOM BOOKING';
 $conf['settings']['default.timezone'] = 'America/New_York';
 $conf['settings']['allow.self.registration'] = 'true';
@@ -47,8 +50,8 @@ $conf['settings']['reservation']['allow.wait.list'] = 'true';
 $conf['settings']['reservation']['checkin.minutes.prior'] = '5';
 $conf['settings']['reservation']['default.start.reminder'] = '';
 $conf['settings']['reservation']['default.end.reminder'] = '';
-$conf['settings']['reservation']['title.required'] = 'true';
-$conf['settings']['reservation']['description.required'] = 'true';
+$conf['settings']['reservation']['title.required'] = 'false';
+$conf['settings']['reservation']['description.required'] = 'false';
 $conf['settings']['reservation.notify']['resource.admin.add'] = 'true';
 $conf['settings']['reservation.notify']['resource.admin.update'] = 'true';
 $conf['settings']['reservation.notify']['resource.admin.delete'] = 'true';
