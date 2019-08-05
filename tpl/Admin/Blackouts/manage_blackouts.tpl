@@ -122,14 +122,14 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                     <label for="endDate" class="no-show">{translate key=EndDate}</label>
 
                 </div>
-				<div class="form-group col-xs-4">
+				<!--<div class="form-group col-xs-4">
                     <label for="scheduleId" class="no-show">{translate key=Schedule} </label>
 
                     <select id="scheduleId" class="form-control col-xs-12">
 						<option value="">{translate key=AllSchedules}</option>
 						{object_html_options options=$Schedules key='GetId' label="GetName" selected=$ScheduleId}
 					</select>
-				</div>
+				</div> -->
 				<div class="form-group col-xs-4">
                     <label for="resourceId" class="no-show">{translate key=Resource} </label>
 
