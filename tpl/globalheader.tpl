@@ -292,21 +292,20 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                             </li>
                         {/if}
                         {if $CanViewReports}
-                        
                             <li class="dropdown" id="navReportsDropdown">
-                                <a href="{$Path}reports/{Pages::REPORTS_COMMON}">{translate key=CommonReports}<!-- <b
-                                        class="caret"></b> --></a>
-                                <!-- <ul class="dropdown-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{translate key="Reports"} <b
+                                            class="caret"></b></a>
+                                <ul class="dropdown-menu">
                                     <li id="navGenerateReport">
                                         <a href="{$Path}reports/{Pages::REPORTS_GENERATE}">{translate key=GenerateReport}</a>
                                     </li>
-                                    <li id="navSavedReports">
+                                    <!-- <li id="navSavedReports">
                                         <a href="{$Path}reports/{Pages::REPORTS_SAVED}">{translate key=MySavedReports}</a>
-                                    </li>
+                                    </li> -->
                                     <li id="navCommonReports">
                                         <a href="{$Path}reports/{Pages::REPORTS_COMMON}">{translate key=CommonReports}</a>
                                     </li>
-                                </ul> -->
+                                </ul>
                             </li>
                         {/if}
                     {/if}

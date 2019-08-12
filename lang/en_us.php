@@ -225,7 +225,7 @@ class en_us extends Language
 		$strings['AddQuota'] = 'Thêm định mức';
 		$strings['FindUser'] = 'Tìm người dùng';
 		$strings['Created'] = 'Đã tạo';
-		$strings['LastModified'] = 'Lần thay đổi gần đây';
+		$strings['LastModified'] = ' ';
 		$strings['GroupName'] = 'Tên Nhóm';
 		$strings['GroupMembers'] = 'Thành Viên Nhóm';
 		$strings['GroupRoles'] = 'Vai trò nhóm';
@@ -567,8 +567,8 @@ class en_us extends Language
 		$strings['CheckedOutSuccess'] = 'Bạn đã được kiểm tra';
 		$strings['CheckInFailed'] = 'Bạn không thể được kiểm tra';
 		$strings['CheckOutFailed'] = 'Bạn không thể được kiểm tra';
-		$strings['CheckInTime'] = 'Kiểm tra trong thời gian';
-		$strings['CheckOutTime'] = 'Kiểm tra giờ giấc';
+		$strings['CheckInTime'] = 'Họp trong thời gian';
+		$strings['CheckOutTime'] = 'Thời lượng cuộc họp';
 		$strings['OriginalEndDate'] = 'Kết thúc ban đầu';
 		$strings['SpecificDates'] = 'Hiển thị ngày cụ thể';
 		$strings['Users'] = 'Người dùng';
