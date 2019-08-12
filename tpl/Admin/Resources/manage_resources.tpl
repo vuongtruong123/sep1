@@ -32,12 +32,12 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 				<li role="presentation">
 					<a role="menuitem" href="{$Path}admin/manage_resource_groups.php">{translate key="ManageResourceGroups"}</a>
 				</li>
-				<li role="presentation">
+<!-- 				<li role="presentation">
 					<a role="menuitem" href="{$Path}admin/manage_resource_types.php">{translate key="ManageResourceTypes"}</a>
-				</li>
-				<li role="presentation">
+				</li> -->
+<!-- 				<li role="presentation">
 					<a role="menuitem" href="{$Path}admin/manage_resource_status.php">{translate key="ManageResourceStatus"}</a>
-				</li>
+				</li> -->
 				<li role="presentation" class="divider"></li>
 				<li role="presentation">
 					<a role="menuitem" href="#" class="import-resources" id="import-resources">
@@ -57,11 +57,11 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 						<span class="fa fa-plus-circle icon add"></span>
 					</a>
 				</li>
-				{if !empty($Resources)}
+<!-- 				{if !empty($Resources)}
 					<li role="presentation">
 						<a role="menuitem" href="#" id="bulkUpdatePromptButton">{translate key=BulkResourceUpdate}</a>
 					</li>
-				{/if}
+				{/if} -->
                 {if !empty($Resources)}
 					<li role="presentation">
 						<a role="menuitem" href="#" id="bulkDeletePromptButton">{translate key=BulkResourceDelete}</a>
@@ -89,21 +89,21 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                     <span class="searchclear glyphicon glyphicon-remove-circle" ref="filterResourceName"></span>
 
                 </div>
-				<div class="form-group {$groupClass}">
+				<!-- <div class="form-group {$groupClass}">
                     <label for="filterScheduleId" class="no-show">{translate key=Schedule}</label>
                     <select id="filterScheduleId" {formname key=SCHEDULE_ID} class="form-control">
 						<option value="">{translate key=AllSchedules}</option>
 						{object_html_options options=$AllSchedules key='GetId' label="GetName" selected=$ScheduleIdFilter}
 					</select>
-				</div>
+				</div> -->
 
-				<div class="form-group {$groupClass}">
+<!-- 				<div class="form-group {$groupClass}">
                     <label for="filterResourceType" class="no-show">{translate key=ResourceType}</label>
                     <select id="filterResourceType" class="form-control" {formname key=RESOURCE_TYPE_ID}>
 						<option value="">{translate key=AllResourceTypes}</option>
 						{object_html_options options=$ResourceTypes key='Id' label="Name" selected=$ResourceTypeFilter}
 					</select>
-				</div>
+				</div> -->
 				<div class="form-group {$groupClass}">
                     <label for="resourceStatusIdFilter" class="no-show">{translate key=ResourceStatus}</label>
                     <select id="resourceStatusIdFilter" style="width:auto;" class="form-control inline" {formname key=RESOURCE_STATUS_ID}>
@@ -132,20 +132,20 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 						{html_options options=$YesNoOptions selected=$RequiresApprovalFilter}
 					</select>
 				</div>
-				<div class="form-group {$groupClass}">
+				<!-- <div class="form-group {$groupClass}">
                     <label for="filterAutoAssign" class="no-show">{translate key=ResourcePermissionAutoGranted}</label>
                     <select id="filterAutoAssign" class="form-control" {formname key=AUTO_ASSIGN} title="{translate key='ResourcePermissionAutoGranted'}">
 						<option value="">{translate key='ResourcePermissionAutoGranted'}</option>
                         {html_options options=$YesNoOptions selected=$AutoPermissionFilter}
 					</select>
-				</div>
-				<div class="form-group {$groupClass}">
+				</div> -->
+				<!-- <div class="form-group {$groupClass}">
                     <label for="filterAllowMultiDay" class="no-show">{translate key=ResourceAllowMultiDay}</label>
                     <select id="filterAllowMultiDay" class="form-control" {formname key=ALLOW_MULTIDAY} title="{translate key=ResourceAllowMultiDay}">
 						<option value="">{translate key=ResourceAllowMultiDay}</option>
                         {html_options options=$YesNoOptions selected=$AllowMultiDayFilter}
 					</select>
-				</div>
+				</div> -->
 				<div class="clearfix"></div>
 				{foreach from=$AttributeFilters item=attribute}
 					{control type="AttributeControl" idPrefix="search" attribute=$attribute searchmode=true class="customAttribute filter-customAttribute{$attribute->Id()} {$groupClass}"}
@@ -334,7 +334,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 									</div>
 								{/strip}
 							</div>
-							<div>
+							<!-- <div>
 								{translate key='ResourceAdministrator'}
 								<span class="propertyValue resourceAdminValue"
 									  data-type="select" data-pk="{$id}" data-value="{$resource->GetAdminGroupId()}"
@@ -344,7 +344,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                                         <span class="no-show">{translate key=ResourceAdministrator}</span>
                                         <span class="fa fa-pencil-square-o"></span></a>
 								{/if}
-							</div>
+							</div> -->
 							
 						</div>
 					</div>
@@ -465,30 +465,30 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 							   data-bv-icon-for="resourceName"></i>
 
 						</div>
-						<div class="form-group">
+						<!-- <div class="form-group">
 							<label for="scheduleId">{translate key='Schedule'}</label>
 							<select class="form-control" {formname key=SCHEDULE_ID} id="scheduleId">
 								{foreach from=$Schedules item=scheduleName key=scheduleId}
 									<option value="{$scheduleId}">{$scheduleName}</option>
 								{/foreach}
 							</select>
-						</div>
-						<div class="form-group">
+						</div> -->
+						<!-- <div class="form-group">
 							<label for="permissions">{translate key='ResourcePermissions'}</label>
 							<select class="form-control" {formname key=AUTO_ASSIGN} id="permissions">
 								<option value="1">{translate key="ResourcePermissionAutoGranted"}</option>
 								<option value="0">{translate key="ResourcePermissionNotAutoGranted"}</option>
 							</select>
-						</div>
+						</div> -->
 						<div class="form-group">
-							<label for="resourceAdminGroupId">{translate key='ResourceAdministrator'}</label>
+							<!-- <label for="resourceAdminGroupId">{translate key='ResourceAdministrator'}</label>
 							<select class="form-control" {formname key=RESOURCE_ADMIN_GROUP_ID}
 									id="resourceAdminGroupId">
 								<option value="">{translate key=None}</option>
 								{foreach from=$AdminGroups item=adminGroup}
 									<option value="{$adminGroup->Id}">{$adminGroup->Name}</option>
 								{/foreach}
-							</select>
+							</select> -->
 						</div>
                         <label for="resourceImageAdd">{translate key=Image}</label>
                         <div class="dropzone" id="addResourceImage">
