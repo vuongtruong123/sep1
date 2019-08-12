@@ -412,7 +412,7 @@ class en_us extends Language
 		$strings['ScheduleAdministrator'] = 'Quản trị viên lịch trình';
 		$strings['Total'] = 'Toàn bộ';
 		$strings['QuantityReserved'] = 'Số lượng';
-		$strings['AllAccessories'] = 'Tất cả phụ kiện';
+		$strings['AllAccessories'] = 'Tất cả thiết bị phòng họp';
 		$strings['GetReport'] = 'Nhận báo cáo';
 		$strings['NoResultsFound'] = 'Không tìm thấy kết quả phù hợp';
 		$strings['SaveThisReport'] = 'Lưu báo cáo này';
