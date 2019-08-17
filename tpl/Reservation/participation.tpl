@@ -16,31 +16,10 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 *}
-<div id="reservationParticipation">
-	<div class="row">
-		<label for="participantAutocomplete">{translate key="ParticipantList"}</label>
-        <span class="badge" id="participantBadge">0</span>
-        <br/>
-		<div class="participationText">
-			<span class="hidden-xs">{translate key=Add}</span>
-			<input type="text" id="participantAutocomplete" class="form-control inline-block user-search" placeholder="{translate key=NameOrEmail}"/>
-			<span class="hidden-xs">|</span>
-		</div>
-		<div class="participationButtons">
-			<button id="promptForParticipants" type="button" class="btn btn-link inline">
-				<i class="fa fa-user"></i>
-				{translate key='Users'}
-			</button>
-			<button id="promptForGroupParticipants" type="button" class="btn btn-link inline">
-				<i class="fa fa-users"></i>
-				{translate key='Groups'}
-			</button>
-		</div>
 
-		<div id="participantList">
-		</div>
-	</div>
-	<div class="row">
+
+
+	<div style="margin: 2px;" class="row">
 		<label for="inviteeAutocomplete">{translate key="InvitationList"}</label>
         <span class="badge" id="inviteeBadge">0</span>
 		<br/>
@@ -54,10 +33,10 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 				<i class="fa fa-user"></i>
 				{translate key='Users'}
 			</button>
-			<button id="promptForGroupInvitees" type="button" class="btn btn-link inline">
+			<!-- <button id="promptForGroupInvitees" type="button" class="btn btn-link inline">
 				<i class="fa fa-users"></i>
 				{translate key='Groups'}
-			</button>
+			</button> -->
 			{if $AllowGuestParticipation}
 				<button id="promptForGuests" type="button" class="btn btn-link inline">
 					<i class="fa fa-user-plus"></i>
@@ -71,8 +50,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 
 		<div id="allowParticipation">
 			<div class="checkbox">
-				<input type="checkbox" {if $AllowParticipantsToJoin}checked="checked"{/if} {formname key=ALLOW_PARTICIPATION} id="allowParticipationCheckbox">
-				<label for="allowParticipationCheckbox">{translate key=AllowParticipantsToJoin}</label>
+				
 			</div>
 		</div>
 
@@ -134,19 +112,34 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 		</div>
 
 	</div>
+	  {if $UploadsEnabled}
+                <div class="row col-xs-12">
+                    <div class="col-xs-12 reservationAttachments">
+
+                        <label>{translate key=AttachFile} <span class="note">({$MaxUploadSize}
+                                MB {translate key=Maximum})</span>
+                        </label>
+
+                        <div id="reservationAttachments">
+                            <div class="attachment-item">
+                                <label for="reservationUploadFile">Reservation Upload File</label>
+                                <input type="file" {formname key=RESERVATION_FILE multi=true}
+                                       id="reservationUploadFile"/>
+                                <a class="add-attachment" href="#">{translate key=Add} <i class="fa fa-plus-square"></i></a>
+                                <a class="remove-attachment" href="#"><span
+                                            class="no-show">{translate key=Delete}</span><i
+                                            class="fa fa-minus-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {/if}
+
 
 	<div class="modal fade" id="participantDialog" tabindex="-1" role="dialog" aria-labelledby="participantModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="participantModalLabel">{translate key=AddParticipants}</h4>
-				</div>
-				<div class="modal-body scrollable-modal-content">
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-primary" data-dismiss="modal">{translate key='Done'}</button>
-				</div>
+			
 			</div>
 		</div>
 	</div>

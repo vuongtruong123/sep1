@@ -40,7 +40,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 						<span class="glyphicon glyphicon-export"></span>
 					</a>
 				</li>
-                {if $CanViewAdmin}
+                <!-- {if $CanViewAdmin}
                     <li role="separator" class="divider"></li>
                     <li role="presentation">
                         <a role="menuitem" href="#" id="addTermsOfService" class="add-link">{translate key=TermsOfService}
@@ -52,7 +52,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                             <span class="fa fa-paint-brush"></span>
                         </a>
                     </li>
-                {/if}
+                {/if} -->
 			</ul>
 		</div>
 		<h1>{translate key=ManageReservations}</h1>
@@ -81,13 +81,13 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 					<input id="userId" type="hidden" value="{$UserIdFilter}"/>
                     <span class="searchclear glyphicon glyphicon-remove-circle" ref="userFilter,userId"></span>
                 </div>
-				<div class="form-group filter-schedule {$groupClass}">
+				<!-- <div class="form-group filter-schedule {$groupClass}">
                     <label for="scheduleId" class="no-show">{translate key=Schedule}</label>
                     <select id="scheduleId" class="form-control">
 						<option value="">{translate key=AllSchedules}</option>
 						{object_html_options options=$Schedules key='GetId' label="GetName" selected=$ScheduleId}
 					</select>
-				</div>
+				</div> -->
 				<div class="form-group filter-resource {$groupClass}">
                     <label for="resourceId" class="no-show">{translate key=Resource}</label>
                     <select id="resourceId" class="form-control">
@@ -109,19 +109,19 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 						   placeholder="{translate key=ReferenceNumber}"/>
                     <span class="searchclear glyphicon glyphicon-remove-circle" ref="referenceNumber"></span>
                 </div>
-                <div class="form-group filter-title {$groupClass}">
+                <!-- <div class="form-group filter-title {$groupClass}">
                     <label for="reservationTitle" class="no-show">{translate key=Title}</label>
                     <input id="reservationTitle" type="text" class="form-control" value="{$ReservationTitle}"
 						   placeholder="{translate key=Title}"/>
                     <span class="searchclear glyphicon glyphicon-remove-circle" ref="reservationTitle"></span>
-                </div>
+                </div> -->
                 <div class="form-group filter-title {$groupClass}">
                     <label for="reservationDescription" class="no-show">{translate key=ReservationDescription}</label>
                     <input id="reservationDescription" type="text" class="form-control" value="{$ReservationDescription}"
 						   placeholder="{translate key=Description}"/>
                     <span class="searchclear glyphicon glyphicon-remove-circle" ref="reservationDescription"></span>
                 </div>
-				<div class="form-group filter-resourceStatus {$groupClass}">
+				<!-- <div class="form-group filter-resourceStatus {$groupClass}">
                     <label for="resourceStatusIdFilter" class="no-show">{translate key=ResourceStatus}</label>
                     <select id="resourceStatusIdFilter" class="form-control">
 						<option value="">{translate key=AllResourceStatuses}</option>
@@ -129,7 +129,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 						<option value="{ResourceStatus::UNAVAILABLE}">{translate key=Unavailable}</option>
 						<option value="{ResourceStatus::HIDDEN}">{translate key=Hidden}</option>
 					</select>
-				</div>
+				</div> -->
 				
 				<div class="clearfix"></div>
 				{foreach from=$AttributeFilters item=attribute}
@@ -150,8 +150,10 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 			<th class="id hidden">ID</th>
 			<th>{sort_column key=User field=ColumnNames::OWNER_LAST_NAME}</th>
 			<th>{sort_column key=Resource field=ColumnNames::RESOURCE_NAME}</th>
-			<th>{sort_column key=Title field=ColumnNames::RESERVATION_TITLE}</th>
-			<th>{sort_column key=Description field=ColumnNames::RESERVATION_DESCRIPTION}</th>
+<!-- 			<th>{sort_column key=Title field=ColumnNames::RESERVATION_TITLE}</th>
+ -->			
+ 			
+ 			<th>{sort_column key=Description field=ColumnNames::RESERVATION_DESCRIPTION}</th>
 			<th>{sort_column key=BeginDate field=ColumnNames::RESERVATION_START}</th>
 			<th>{sort_column key=EndDate field=ColumnNames::RESERVATION_END}</th>
 			<th>{translate key='Duration'}</th>
@@ -199,7 +201,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 					{*<span class="reservationResourceStatusReason">{$StatusReasons[$reservation->ResourceStatusReasonId]->Description()}</span>*}
 					{*{/if}*}
 				</td>
-				<td class="reservationTitle">{$reservation->Title}</td>
+				<!-- <td class="reservationTitle">{$reservation->Title}</td> -->
 				<td class="description">{$reservation->Description}</td>
 				<td class="date">{formatdate date=$reservation->StartDate timezone=$Timezone key=short_reservation_date}</td>
 				<td class="date">{formatdate date=$reservation->EndDate timezone=$Timezone key=short_reservation_date}</td>
@@ -250,9 +252,9 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 						<div>
 							<label>{translate key='CheckOutTime'}</label> {formatdate date=$reservation->CheckoutDate timezone=$Timezone key=short_datetime}
 						</div>
-						<div>
+						<!-- <div>
 							<label>{translate key='OriginalEndDate'}</label> {formatdate date=$reservation->OriginalEndDate timezone=$Timezone key=short_datetime}
-						</div>
+						</div> -->
 					</div>
 					{if $ReservationAttributes|count > 0}
 						<div class="reservation-list-attributes">

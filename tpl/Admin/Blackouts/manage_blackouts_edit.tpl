@@ -72,7 +72,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 			{control type="RecurrenceControl" RepeatTerminationDate=$RepeatTerminationDate prefix='edit'}
 		</div>
 
-		<div class="form-group col-xs-12">
+		<!-- <div class="form-group col-xs-12">
             <div class="radio">
                 <input {formname key=CONFLICT_ACTION} type="radio" id="bookAroundUpdate"
                                                       name="existingReservations"
@@ -92,7 +92,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                                                       value="{ReservationConflictResolution::Delete}"/>
                 <label for="deleteExisting">{translate key=BlackoutDeleteConflicts}</label>
             </div>
-		</div>
+		</div> -->
 
 		<div id="update-blackout-buttons" class="col-xs-12 margin-bottom-25">
 			<div class="pull-right">

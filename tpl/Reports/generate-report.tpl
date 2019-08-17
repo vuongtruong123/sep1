@@ -49,12 +49,12 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 										   id="results_count"/>
 									<label for="results_count">{translate key=Count}</label>
 								</div>
-                                <div class="col-md-9">
+                                <!-- <div class="col-md-9">
 									<input type="radio" {formname key=REPORT_RESULTS}
 										   value="{Report_ResultSelection::UTILIZATION}"
 										   id="results_utilization"/>
 									<label for="results_utilization">{translate key=Utilization}</label>
-								</div>
+								</div> -->
 							</div>
 						</div>
 
@@ -153,14 +153,14 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 										{/foreach}
 									</select>
 								</div>
-								<div class="form-group no-margin no-padding col-md-2">
+								<!-- <div class="form-group no-margin no-padding col-md-2">
                                     <label for="resourceTypeId" class="no-show">{translate key=ResourceType}</label>
                                     <select class="form-control" {formname key=RESOURCE_TYPE_ID multi=true} multiple="multiple" id="resourceTypeId">
 										{foreach from=$ResourceTypes item=resourceType}
 											<option value="{$resourceType->Id()}">{$resourceType->Name()}</option>
 										{/foreach}
 									</select>
-								</div>
+								</div> -->
 								<div class="form-group no-margin no-padding col-md-2">
                                     <label for="accessoryId" class="no-show">{translate key=Accessory}</label>
                                     <select class="form-control" {formname key=ACCESSORY_ID multi=true} multiple="multiple" id="accessoryId">
@@ -169,22 +169,15 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 										{/foreach}
 									</select>
 								</div>
-								<div class="form-group no-margin no-padding col-md-2">
-                                    <label for="scheduleId" class="no-show">{translate key=Schedule}</label>
-                                    <select class="form-control" {formname key=SCHEDULE_ID multi=true} multiple="multiple" id="scheduleId">
-										{foreach from=$Schedules item=schedule}
-											<option value="{$schedule->GetId()}">{$schedule->GetName()}</option>
-										{/foreach}
-									</select>
-								</div>
-								<div class="form-group no-margin no-padding col-md-2">
+								
+								<!-- <div class="form-group no-margin no-padding col-md-2">
                                     <label for="groupId" class="no-show">{translate key=Group}</label>
                                     <select class="form-control" {formname key=GROUP_ID multi=true} multiple="multiple" id="groupId">
 										{foreach from=$Groups item=group}
 											<option value="{$group->Id}">{$group->Name}</option>
 										{/foreach}
 									</select>
-								</div>
+								</div> -->
 							</div>
 							<div class="col-md-11 col-md-offset-1">
 								<div class="form-group no-margin no-padding col-md-2">
@@ -198,7 +191,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 										</div>
 									</div>
 								</div>
-								<div class="form-group no-margin no-padding col-md-2">
+								<!-- <div class="form-group no-margin no-padding col-md-2">
 									<div id="participant-filter-div">
 										<div class="form-group">
 											<label class="control-label sr-only"
@@ -209,7 +202,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 												   type="hidden" {formname key=PARTICIPANT_ID}/>
 										</div>
 									</div>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>

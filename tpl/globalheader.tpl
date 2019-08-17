@@ -143,12 +143,12 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand"
-                   href="{$HomeUrl}">{html_image src="$LogoUrl?{$Version}" alt="$Title" class="logo"}</a>
+                   href="{$Path}view-schedule.php">{html_image src="$LogoUrl?{$Version}" alt="$Title" class="logo"}</a>
             </div>
             <div class="collapse navbar-collapse" id="booked-navigation">
                 <ul class="nav navbar-nav">
                     <li class="dropdown" id="navHelpDropdown">
-                            <li id="navschedule"><a href="{$Path}view-schedule.php">Trang chủ</a></li>
+                            <li id="navschedule"><a href="{$Path}Dashboard.php">Trang chủ</a></li>
                             
                             <li id="navAbout"><a href="{$Path}help.php?ht=about">{translate key=About}</a></li>
                             <li id="navHelp"><a href="{$Path}help.php">{translate key=Help}</a></li>
@@ -228,9 +228,9 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                                     <li id="navManageUsers"><a
                                                 href="{$Path}admin/manage_users.php">{translate key="ManageUsers"}</a>
                                     </li>
-                                    <li id="navManageGroups"><a
+                                    <!-- <li id="navManageGroups"><a
                                                 href="{$Path}admin/manage_groups.php">{translate key="ManageGroups"}</a>
-                                    </li>
+                                    </li> -->
 
                                     <!-- <li id="navManageAnnouncements"><a
                                                 href="{$Path}admin/manage_announcements.php">{translate key="ManageAnnouncements"}</a>
@@ -300,9 +300,9 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                                     <li id="navGenerateReport">
                                         <a href="{$Path}reports/{Pages::REPORTS_GENERATE}">{translate key=GenerateReport}</a>
                                     </li>
-                                    <li id="navSavedReports">
+                                    <!-- <li id="navSavedReports">
                                         <a href="{$Path}reports/{Pages::REPORTS_SAVED}">{translate key=MySavedReports}</a>
-                                    </li>
+                                    </li> -->
                                     <li id="navCommonReports">
                                         <a href="{$Path}reports/{Pages::REPORTS_COMMON}">{translate key=CommonReports}</a>
                                     </li>

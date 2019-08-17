@@ -9,7 +9,7 @@ $conf['settings']['admin.email.name'] = 'Booked Administrator';
 $conf['settings']['default.page.size'] = '50';
 $conf['settings']['enable.email'] = 'true';
 $conf['settings']['default.language'] = 'en_us';
-$conf['settings']['script.url'] = 'http:';
+$conf['settings']['script.url'] = 'http://localhost:8080/sep1/Web';
 $conf['settings']['image.upload.directory'] = 'Web/uploads/images';
 $conf['settings']['image.upload.url'] = 'uploads/images';
 $conf['settings']['cache.templates'] = 'true';
@@ -21,6 +21,7 @@ $conf['settings']['registration.notify.admin'] = 'false';
 $conf['settings']['inactivity.timeout'] = '30';
 $conf['settings']['name.format'] = '{first} {last}';
 $conf['settings']['css.extension.file'] = '';
+<<<<<<< HEAD
 
 
 $conf['settings']['disable.password.reset'] = 'true';
@@ -30,6 +31,10 @@ $conf['settings']['home.url'] = 'view-schedule.php';
 
 
 
+=======
+$conf['settings']['disable.password.reset'] = 'true';
+$conf['settings']['home.url'] = 'view-schedule.php';
+>>>>>>> 0f7e2f32c99f4ef21334ae79ce643500628ebea8
 $conf['settings']['logout.url'] = 'view-schedule.php';
 $conf['settings']['default.homepage'] = '1';
 $conf['settings']['schedule']['use.per.user.colors'] = 'false';
@@ -54,8 +59,8 @@ $conf['settings']['reservation']['allow.wait.list'] = 'true';
 $conf['settings']['reservation']['checkin.minutes.prior'] = '5';
 $conf['settings']['reservation']['default.start.reminder'] = '';
 $conf['settings']['reservation']['default.end.reminder'] = '';
-$conf['settings']['reservation']['title.required'] = 'false';
-$conf['settings']['reservation']['description.required'] = 'false';
+$conf['settings']['reservation']['title.required'] = 'true';
+$conf['settings']['reservation']['description.required'] = 'true';
 $conf['settings']['reservation.notify']['resource.admin.add'] = 'true';
 $conf['settings']['reservation.notify']['resource.admin.update'] = 'true';
 $conf['settings']['reservation.notify']['resource.admin.delete'] = 'true';

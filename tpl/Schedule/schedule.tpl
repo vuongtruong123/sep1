@@ -244,24 +244,8 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 <!-- day ne
  -->
         {if !$HideSchedule}
-            {block name="legend"}
-                <div class="hidden-xs row col-sm-12 schedule-legend">
-                    <div class="center">
-                        <div class="legend reservable">{translate key=Reservable}</div>
-                        <div class="legend unreservable">{translate key=Unreservable}</div>
-                        <div class="legend reserved">{translate key=Reserved}</div>
-                        {if $LoggedIn}
-                            <div class="legend reserved mine">{translate key=MyReservation}</div>
-                            <!-- <div class="legend reserved participating">{translate key=Participant}</div> -->
-                        {/if}
-                        <div class="legend reserved pending">{translate key=Pending}</div>
-                        <div class="legend pasttime">{translate key=Past}</div>
-<!--                         <div class="legend restricted">{translate key=Restricted}</div>
- -->                    </div>
-                </div>
-            {/block}
-            <div class="row">
-                <div id="reservations-left" class="col-md-2 col-sm-12 default-box">
+
+        <div id="reservations-left" class="col-md-2 col-sm-12 default-box">
                     <div class="reservations-left-header">{translate key=ResourceFilter}
                         <a href="#" class="pull-right toggle-sidebar" title="Hide Reservation Filter"><i
                                     class="glyphicon glyphicon-remove"></i>
@@ -321,6 +305,26 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                         </form>
                     </div>
                 </div>
+        
+            {block name="legend"}
+                <div class="hidden-xs row col-sm-12 schedule-legend">
+                    <div class="center">
+                        <div class="legend reservable">{translate key=Reservable}</div>
+                        <div class="legend unreservable">{translate key=Unreservable}</div>
+                        <div class="legend reserved">{translate key=Reserved}</div>
+                        {if $LoggedIn}
+                            <div class="legend reserved mine">{translate key=MyReservation}</div>
+                            <!-- <div class="legend reserved participating">{translate key=Participant}</div> -->
+                        {/if}
+                        <div class="legend reserved pending">{translate key=Pending}</div>
+                        <div class="legend pasttime">{translate key=Past}</div>
+<!--                         <div class="legend restricted">{translate key=Restricted}</div>
+ -->                    </div>
+                </div>
+            {/block}
+            <div class="row">
+                <!-- timkiem -->
+                
 
                 <div id="reservations" class="col-md-10 col-sm-12">
                     <div>

@@ -100,8 +100,9 @@
 #reservationDetails {
   padding-right: 25px;
 }
-#reservationDetails #userName {
-  font-size: 1.2em;
+#reservationDetails #userName{
+  font-size: 1.2em  ;
+  text-align: center !important;
 }
 .reservationButtons {
   margin-top: 20px;
@@ -119,8 +120,7 @@
   float: right;
 }
 #reservationParticipation {
-  padding-left: 25px;
-}
+  }
 #participantList,
 #inviteeList {
   height: 100px;
@@ -131,7 +131,7 @@
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  margin: 2px 0 5px 0;
+  margin: 2px 0 5px 5px ;
   background-color: #fff;
 }
 #participantList .user,
@@ -242,9 +242,9 @@ ul.jqtree-tree .group-resource .jqtree-title {
 .weeks .btn-sm {
   width: 55px;
 }
-#reservation-box label {
-  min-width: 50px;
-}
+/*#reservation-box label {
+  min-width: 100px;
+}*/
 .accessory-quantity {
   width: 60px;
 }
