@@ -152,9 +152,10 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
                             
                             <li id="navAbout"><a href="{$Path}help.php?ht=about">{translate key=About}</a></li>
                             <li id="navHelp"><a href="{$Path}help.php">{translate key=Help}</a></li>
+                            <li id="navNews"><a href="{$Path}news.php">Tin Mới</a></li>
                             {if $CanViewAdmin}
-                                <!-- <li id="navHelpAdmin"><a
-                                        href="{$Path}help.php?ht=admin">{translate key=Administration}</a></li> -->{/if}
+                                <li id="navnewAdmin"><a
+                                        href="{$Path}news.php?ht=admin">QLTM</a></li>{/if}
                     </li>
                     {if $LoggedIn}
                         <!-- <li id="navDashboard"><a href="{$Path}{Pages::DASHBOARD}">{translate key="Dashboard"}</a></li> -->

@@ -115,6 +115,12 @@ class SmartyPage extends Smarty
 
 		$this->Display($templateName);
 	}
+	public function DisplayLocalized2($templateName)
+	{
+		
+
+		$this->Display($templateName);
+	}
 
 	/**
 	 * @param string $templateName

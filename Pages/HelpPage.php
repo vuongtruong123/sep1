@@ -50,4 +50,5 @@ class HelpPage extends Page
 			$this->DisplayLocalized('help.tpl');
 		}
 	}
+	
 }
